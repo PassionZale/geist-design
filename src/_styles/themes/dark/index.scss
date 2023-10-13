@@ -1,0 +1,47 @@
+.dark {
+  // base color
+  --accents-1: #111;
+  --accents-2: #333;
+  --accents-3: #444;
+  --accents-4: #666;
+  --accents-5: #888;
+  --accents-6: #999;
+  --accents-7: #eaeaea;
+  --accents-8: #fafafa;
+  --geist-foreground: #fff;
+  --geist-background: #000;
+  --geist-selection: var(--geist-purple);
+
+  // status color
+  --geist-success: #0070f3;
+  --geist-success-light: #3291ff;
+  --geist-success-dark: #0366d6;
+
+  --geist-error: #e00;
+  --geist-error-light: #ff1a1a;
+  --geist-error-dark: #c00;
+
+  --geist-warning: #f5a623;
+  --geist-warning-light: #f7b955;
+  --geist-warning-dark: #f49b0b;
+
+  // highlight
+  --geist-alert: #ff0080;
+  --geist-purple: #f81ce5;
+  --geist-cyan: #79ffe1;
+  --geist-violet: #7928ca;
+
+  // component expressiveness
+  --geist-link-color: var(--geist-foreground);
+  --geist-link-style: underline;
+  --geist-secondary: var(--accents-5);
+  --geist-code: var(--geist-cyan);
+  --dropdown-box-shadow: 0 0 0 1px #333;
+  --dropdown-triangle-stroke: #333;
+  --scroller-start: rgba(0, 0, 0, 0.3);
+  --scroller-end: rgba(255, 255, 255, 0);
+  --shadow-small: 0 0 0 1px #333;
+  --shadow-medium: 0 0 0 1px #333;
+  --shadow-large: 0 0 0 1px #333;
+  --portal-opacity: 0.75;
+}

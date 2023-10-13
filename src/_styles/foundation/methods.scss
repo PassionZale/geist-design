@@ -1,0 +1,31 @@
+@use "sass:math";
+
+@function rem($pxValue) {
+  $remValue: math.div($pxValue, 16) + rem;
+
+  @return $remValue;
+}
+
+@mixin layout($size: '') {
+  @if $size == xs {
+    @media only screen and (max-width: '767px') {
+      @content;
+    }
+  } @else if $size == sm {
+    @media screen and (min-width: '767px') and (max-width: '959px') {
+      @content;
+    }
+  } @else if $size == md {
+    @media screen and (min-width: '959px') and (max-width: '1440px') {
+      @content;
+    }
+  } @else if $size == lg {
+    @media screen and (min-width: '1440px') and (max-width: '1920px') {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: '1920px') {
+      @content;
+    }
+  }
+}
