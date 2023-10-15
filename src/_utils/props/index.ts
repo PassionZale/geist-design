@@ -1,6 +1,8 @@
-import type { PropType } from 'vue'
+import type { PropType, VNode, Component } from 'vue'
 
-type ValidatorFn<T> = (value: T) => boolean
+export type ValidatorFn<T> = (value: T) => boolean
+
+export type GeistIcon = VNode | Component
 
 export const setBooleanProp = (
   defaultValue = false
@@ -17,7 +19,11 @@ export const setBooleanProp = (
 export const setStringProp = <T extends string>(
   defaultValue?: T,
   validator?: ValidatorFn<T>
-) => {
+): {
+  readonly type: PropType<T>
+  readonly default: T extends string ? T : undefined
+  readonly validator?: ValidatorFn<T>
+} => {
   const props = {
     type: String as unknown as PropType<T>,
     default: defaultValue
@@ -32,4 +38,16 @@ export const setStringProp = <T extends string>(
   }
 
   return props
+}
+
+export const setObjectProp = <T extends object>(
+  defaultValue = null
+): {
+  readonly type: PropType<T>
+  readonly default: () => T | null
+} => {
+  return {
+    type: Object as PropType<T>,
+    default: (): T | null => defaultValue
+  } as const
 }
