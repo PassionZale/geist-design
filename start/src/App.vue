@@ -4,6 +4,9 @@
 </script>
 
 <template>
+  <g-icon-airplay size="34" color="red" />
+  <br />
+
   <g-avatar :src="image" size="small" />
   <g-avatar :src="image" />
   <g-avatar :src="image" size="big" />
