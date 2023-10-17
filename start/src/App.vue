@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import image from './assets/vue.svg'
+  import image from './assets/geist-design.svg'
   import { GIconAirplay, GIconGithub } from '@whouu/geist-design-icons'
 </script>
 

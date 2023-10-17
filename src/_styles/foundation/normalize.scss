@@ -225,6 +225,15 @@ hr {
 }
 details {
 	background-color: var(--accents-1);
+
+	& > summary {
+		list-style: none;
+
+		&::marker,/* Latest Chrome, Edge, Firefox */ 
+		&::-webkit-details-marker /* Safari */ {
+			display: none;
+		}
+	}
 }
 .zi-title {
 	text-transform: uppercase;
