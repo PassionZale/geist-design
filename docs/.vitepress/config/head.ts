@@ -6,7 +6,7 @@ export const head: HeadConfig[] = [
     'link',
     {
       rel: 'icon',
-      href: '/public/favicon.svg'
+      href: '/favicon.svg'
     }
   ],
   /** viewport */
@@ -54,7 +54,7 @@ export const head: HeadConfig[] = [
     'meta',
     {
       property: 'og:image',
-      content: '/public/favicon.svg'
+      content: '/favicon.svg'
     }
   ],
   /** og description */

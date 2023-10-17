@@ -1,0 +1,35 @@
+export const sidebar = {
+  '/guide/': {
+    base: '/guide/',
+    items: [
+      {
+        text: '快速开始',
+        collapsed: false,
+        items: [
+          { text: '什么是 Geist Design', link: 'introduction' },
+          { text: '安装', link: 'installation' }
+        ]
+      },
+      {
+        text: '定制与主题',
+        collapsed: false,
+        items: [
+          { text: '主题', link: 'themes' },
+          { text: '色彩', link: 'colors' },
+          { text: '文字排版', link: 'typography' },
+          { text: '图标', link: 'icons' }
+        ]
+      }
+    ]
+  },
+  '/components/': {
+    base: '/components/',
+    items: [
+      {
+        text: '全部组件',
+        collapsed: false,
+        items: [{ text: 'Avatar', link: 'avatar' }]
+      }
+    ]
+  }
+}
