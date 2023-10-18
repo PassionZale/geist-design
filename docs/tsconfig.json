@@ -25,6 +25,13 @@
       "geist-design": ["../src/index.ts"]
     }
   },
-  "include": ["components/**/*.ts", "components/**/*.d.ts", "components/**/*.tsx", "components/**/*.vue"],
+  "include": [
+    "vite.config.ts",
+    "vite-env.d.ts",
+    ".vitepress/theme/**/*.ts",
+    ".vitepress/theme/**/*.d.ts",
+    ".vitepress/theme/**/*.tsx",
+    ".vitepress/theme/**/*.vue"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
