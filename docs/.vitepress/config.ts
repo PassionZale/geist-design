@@ -37,7 +37,7 @@ export default defineConfig({
     lastUpdatedText: '最后更新时间',
 
     editLink: {
-      pattern: 'https://github.com/PassionZale/geist-desing/edit/main/docs/:path',
+      pattern: 'https://github.com/PassionZale/geist-design/edit/main/docs/:path',
       text: '编辑此页'
     },
 

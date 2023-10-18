@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* geist-desing alias */
+    /* geist-design alias */
     "paths": {
       "geist-design": ["../src/index.ts"]
     }
