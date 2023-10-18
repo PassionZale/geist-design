@@ -9,11 +9,11 @@ import { sidebar } from './config/sidebar'
  * @see site-config https://vitepress.dev/reference/site-config
  */
 export default defineConfig({
-  lang: "zh-cn",
+  lang: 'zh-cn',
 
   title: 'Geist Design',
 
-  description: "Vue3 component library",
+  description: 'Vue3 component library',
 
   head,
 

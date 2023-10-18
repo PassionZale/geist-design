@@ -1,0 +1,20 @@
+:root {
+  --vp-c-bg: var(--geist-background);
+  --vp-sidebar-bg-color: var(--geist-background);
+}
+
+.dark {
+  --vp-c-bg: var(--geist-background);
+  --vp-sidebar-bg-color: var(--geist-background);
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+

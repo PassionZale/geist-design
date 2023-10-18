@@ -4,7 +4,6 @@ export const sidebar = {
     items: [
       {
         text: '快速开始',
-        collapsed: false,
         items: [
           { text: '什么是 Geist Design', link: 'introduction' },
           { text: '安装', link: 'installation' }
@@ -12,7 +11,6 @@ export const sidebar = {
       },
       {
         text: '定制与主题',
-        collapsed: false,
         items: [
           { text: '主题', link: 'themes' },
           { text: '色彩', link: 'colors' },
@@ -26,8 +24,7 @@ export const sidebar = {
     base: '/components/',
     items: [
       {
-        text: '全部组件',
-        collapsed: false,
+        text: '组件',
         items: [{ text: 'Avatar', link: 'avatar' }]
       }
     ]
