@@ -1,7 +1,15 @@
 <script setup lang="ts">
   defineOptions({ name: 'ex-code-render' })
+
+  defineProps({ name: String })
 </script>
 
 <template>
-  <div> ex code render</div>
+  <component :is="name || 'div'" />
 </template>
+
+<style lang="scss">
+  pre {
+    overflow-y: auto;
+  }
+</style>

@@ -2,8 +2,9 @@ import type { App, Component } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import GeistDesign from 'geist-design'
 
-import 'geist-design-styles'
+import 'geist-design-styles/index.scss'
 import './styles/reset.scss'
+import './styles/prism.scss'
 
 type Module = { [key: string]: any }
 

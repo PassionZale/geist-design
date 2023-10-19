@@ -13,7 +13,14 @@ export default (): UserConfig => {
     resolve: {
       alias: {
         'geist-design': resolve(__dirname, '../src/index.ts'),
-        'geist-design-styles': resolve(__dirname, '../src/_styles/index.scss')
+        'geist-design-styles': resolve(__dirname, '../src/_styles')
+      }
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "geist-design-styles/foundation/methods.scss";'
+        }
       }
     }
   }

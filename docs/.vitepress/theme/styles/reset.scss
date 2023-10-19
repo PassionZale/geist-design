@@ -1,11 +1,15 @@
 :root {
   --vp-c-bg: var(--geist-background);
   --vp-sidebar-bg-color: var(--geist-background);
+  --vp-code-color: var(--geist-code);
+  --vp-code-bg: none;
+  --vp-code-font-size: 0.9rem;
 }
 
 .dark {
   --vp-c-bg: var(--geist-background);
   --vp-sidebar-bg-color: var(--geist-background);
+  --vp-code-color: var(--geist-code);
 }
 
 *,
@@ -17,4 +21,3 @@
 p {
   margin: 0;
 }
-

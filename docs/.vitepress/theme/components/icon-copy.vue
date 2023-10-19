@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  defineOptions({ name: 'icon-copy' })
+  defineOptions({ name: 'ex-icon-copy' })
 </script>
 
 <template>

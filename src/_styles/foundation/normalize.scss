@@ -191,7 +191,7 @@ ul {
 code {
 	color: var(--geist-code);
 	font-family: var(--font-mono);
-	font-size: 0.9em;
+	font-size: 0.9rem;
 	white-space: pre-wrap;
 	&:before {
 		content: '`';
@@ -235,11 +235,11 @@ details {
 		}
 	}
 }
-.zi-title {
+.g-title {
 	text-transform: uppercase;
 	color: var(--accents-4);
 }
-.zi-subtitle {
+.g-subtitle {
 	color: var(--accents-3);
 	font-size: 0.8125rem;
 }
