@@ -25,3 +25,15 @@
 多个头像可以进行堆叠。
 
 </ex-code>
+
+<ex-footer>
+
+| 属性        | 描述                    | 类型      | 推荐值                              | 默认     |
+| ----------- | ----------------------- | --------- | ----------------------------------- | -------- |
+| **stacked** | 堆叠显示头像            | `boolean` | `true` / `false`                    | `false`  |
+| **src**     | 图片的 src 属性         | `string`  | -                                   | -        |
+| **text**    | 当缺少 src 时显示的文字 | `string`  | -                                   | -        |
+| **size**    | 头像大小                | `string`  | `small` / `medium` / `big` / `huge` | `medium` |
+| **shape**   | 组件形状                | `string`  | `circle` / `square`                 | `circle` |
+
+</ex-footer>
