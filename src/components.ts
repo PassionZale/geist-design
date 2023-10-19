@@ -6,3 +6,6 @@ export * from './button'
 
 export { GCard } from './card'
 export * from './card'
+
+export { GCode } from './code'
+export * from './code'

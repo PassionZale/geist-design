@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     GAvatar: typeof components.GAvatar
     GButton: typeof components.GButton
     GCard: typeof components.GCard
+    GCode: typeof components.GCode
   }
 }
 

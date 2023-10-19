@@ -1,0 +1,14 @@
+.g-bash {
+  padding: var(--geist-gap-half);
+
+  &:before {
+    content: '$ ';
+    font-weight: 500;
+  }
+}
+
+.g-pre {
+  code {
+    font-size: 0.8125rem;
+  }
+}
