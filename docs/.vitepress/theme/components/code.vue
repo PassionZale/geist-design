@@ -11,9 +11,7 @@
       required: true
     },
 
-    hiddenCode: Boolean,
-
-    desc: String
+    hiddenCode: Boolean
   })
 
   const state = reactive<{ codeName: string; codeTemplate: string }>({
@@ -22,19 +20,14 @@
   })
 
   const detailsRef = ref<HTMLElement | null>(null)
-  const codeRenderRef = ref<HTMLElement | null>(null)
   const prismRef = ref<HTMLElement | null>(null)
 
   onMounted(() => {
+    initState()
+
     resize()
 
     window.addEventListener('resize', resize)
-
-    state.codeName = props.name.split('-').reverse()[0]
-
-    const template = findTemplate()
-
-    state.codeTemplate = template && template._meta ? template._meta() : ''
   })
 
   onUnmounted(() => {
@@ -54,17 +47,35 @@
     }
   }
 
-  function findTemplate() {
-    if (!codeRenderRef.value) return null
+  async function initState() {
+    const arrs = props.name.split('-')
 
-    // @ts-ignore
-    const children = codeRenderRef.value.$children
+    state.codeName = arrs[arrs.length - 1]
 
-    console.log(children)
+    const [_, ...rest] = arrs
 
-    if (!children || !children.length) return null
+    console.log(rest)
 
-    return children[0]
+    const sfcFileName = `${rest.join('/')}.vue`
+
+    console.log(sfcFileName)
+
+
+    // TODO 动态导入
+
+    // const modules = await import(`../examples/${sfcFileName}`, {
+    //   as: 'raw',
+    //   eager: true
+    // })
+
+    const modules = import.meta.glob('../examples/avatar/default.vue', {
+      as: 'raw',
+      eager: true
+    })
+
+    console.log(modules)
+
+    state.codeTemplate = Object.values(modules)[0]
   }
 
   function copy() {
@@ -81,7 +92,7 @@
     </p>
 
     <g-card class="ex-code-box" :class="{ 'box-hidden-code': hiddenCode }">
-      <ex-code-render :name="name" ref="codeRenderRef" />
+      <component :is="name" />
     </g-card>
 
     <details class="details" ref="detailsRef" v-if="!hiddenCode">
@@ -103,8 +114,11 @@
   </div>
 </template>
 
-
 <style lang="scss" scoped>
+  pre {
+    overflow-y: auto;
+  }
+
   .ex-code {
     margin-top: 4.5rem;
   }
