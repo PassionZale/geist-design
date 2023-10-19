@@ -1,0 +1,31 @@
+.g-card {
+  background: var(--geist-background);
+  margin: 0;
+  width: 100%;
+  transition: all 0.2s ease;
+  padding: var(--geist-gap);
+  border-radius: var(--geist-radius);
+  border: 1px solid var(--accents-2);
+  box-sizing: border-box;
+
+  &.hoverable:hover {
+    box-shadow: var(--shadow-small);
+  }
+
+  &.shadow {
+    box-shadow: var(--shadow-small);
+    border-color: transparent;
+
+    &:hover {
+      box-shadow: var(--shadow-medium);
+    }
+  }
+
+  & > *:first-child {
+    margin-top: 0;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}

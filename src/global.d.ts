@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     GAvatar: typeof components.GAvatar
     GButton: typeof components.GButton
+    GCard: typeof components.GCard
   }
 }
 
