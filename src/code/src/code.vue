@@ -14,13 +14,7 @@
 </script>
 
 <template>
-  <pre v-if="isBlock" :class="{ 'g-bash': bash, 'g-pre': bash || block }">
-    <code>
-      <slot />
-    </code>
-  </pre>
+  <pre v-if="isBlock" :class="{ 'g-bash': bash, 'g-pre': bash || block }"><code><slot></slot></code></pre>
 
-  <code v-else>
-    <slot />
-  </code>
+  <code v-else><slot></slot></code>
 </template>
