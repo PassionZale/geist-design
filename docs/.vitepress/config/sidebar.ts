@@ -25,7 +25,12 @@ export const sidebar = {
     items: [
       {
         text: '组件',
-        items: [{ text: 'Avatar', link: 'avatar' }]
+        items: [
+          { text: 'Avatar', link: 'avatar' },
+          { text: 'Button', link: 'button' },
+          { text: 'Card', link: 'card' },
+          { text: 'Code', link: 'code' },
+        ]
       }
     ]
   }
