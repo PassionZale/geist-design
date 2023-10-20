@@ -11,7 +11,8 @@ export { data }
 
 /**
  * https://vitepress.dev/guide/data-loading#data-from-local-files
- *
+ * 
+ * 参考 https://github.com/vuejs/blog/blob/main/.vitepress/theme/posts.data.ts
  * 仅在构建时加载所有示例的 rawData
  */
 export default {
