@@ -1,13 +1,15 @@
 <script lang="ts" setup>
   import { computed, reactive } from 'vue'
   import { Props } from './props'
+  import type { Emits } from './emits'
 
   defineOptions({ name: 'GButton' })
 
+  defineEmits<Emits>()
+
   const props = defineProps(Props)
 
-  const state = reactive<{ dripStyles: string; isFocus: boolean }>({
-    dripStyles: '',
+  const state = reactive<{ isFocus: boolean }>({
     isFocus: false
   })
 
@@ -32,8 +34,6 @@
     state.isFocus && (str += ' g-btn-tab-selected')
     return str.trim()
   })
-
-  const handleClick = (): void => {}
 </script>
 
 <template>
@@ -41,16 +41,18 @@
     class="g-btn"
     :class="classes"
     :tabindex="tabindex"
-    @click="handleClick"
+    @click="$emit('click')"
     @keyup.tab="state.isFocus = true"
     @blur="state.isFocus = false"
   >
     <span v-if="loading" class="g-btn-loading-shim"><i></i><i></i><i></i></span>
-    <zi-button-drip ref="drip"></zi-button-drip>
+
     <span v-if="showIcon" class="g-btn-icon default">
       <component :is="icon" />
     </span>
+
     <slot></slot>
+
     <span v-if="showIconRight" class="g-btn-icon right">
       <component :is="iconRight" />
     </span>

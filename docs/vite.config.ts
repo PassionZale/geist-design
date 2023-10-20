@@ -1,9 +1,12 @@
 import { resolve } from 'path'
+import svgLoader from 'vite-svg-loader';
 import type { UserConfig } from 'vite'
 
 export default (): UserConfig => {
   return {
     root: './docs',
+
+    plugins: [svgLoader()],
 
     optimizeDeps: {
       exclude: ['vitepress']
