@@ -2,6 +2,7 @@
   import { reactive, onMounted, ref, onUnmounted } from 'vue'
   import { getRealShape } from '../uitls/bounding'
   import * as clipboard from '../uitls/clipboard'
+  import { data as examples } from '../data/examples.data'
 
   defineOptions({ name: 'ex-code' })
 
@@ -52,30 +53,9 @@
 
     state.codeName = arrs[arrs.length - 1]
 
-    const [_, ...rest] = arrs
-
-    console.log(rest)
-
-    const sfcFileName = `${rest.join('/')}.vue`
-
-    console.log(sfcFileName)
-
-
-    // TODO 动态导入
-
-    // const modules = await import(`../examples/${sfcFileName}`, {
-    //   as: 'raw',
-    //   eager: true
-    // })
-
-    const modules = import.meta.glob('../examples/avatar/default.vue', {
-      as: 'raw',
-      eager: true
-    })
-
-    console.log(modules)
-
-    state.codeTemplate = Object.values(modules)[0]
+    state.codeTemplate = examples.find(
+      ({ sfcName }) => props.name === sfcName
+    )!.sfcRawData
   }
 
   function copy() {
