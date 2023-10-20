@@ -1,10 +1,12 @@
 <script setup lang="ts">
   defineOptions({ name: 'ex-footer' })
+
+  defineProps({ title: { type: String, default: 'Attributes' } })
 </script>
 
 <template>
   <div class="ex-attributes">
-    <h3 class="title">Attributes</h3>
+    <h3 class="title">{{ title }}</h3>
 
     <g-card>
       <slot />
@@ -24,18 +26,18 @@
     margin-bottom: rem(22);
   }
 
-  @include layout
+  @include layout;
 </style>
 
 <style lang="scss">
-@include layout(xs) {
-  .ex-attributes .g-card {
-    overflow: scroll;
+  @include layout(xs) {
+    .ex-attributes .g-card {
+      overflow: scroll;
 
-    table {
-      display: block;
-      overflow-x: scroll;
+      table {
+        display: block;
+        overflow-x: scroll;
+      }
     }
   }
-}
 </style>

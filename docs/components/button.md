@@ -65,3 +65,11 @@
 | **iconRight** | 设置图标(右边) | `component` | -                                                                 | -         |
 
 </ex-footer>
+
+<ex-footer title="Events">
+
+| 事件名称          | 描述           | 回调参数  |
+| ------------- | -------------- | ----------- |
+| **click**      | 点击按钮时的回调       | `(event) => void`  |
+
+</ex-footer>
