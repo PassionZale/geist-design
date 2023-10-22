@@ -49,3 +49,11 @@ p {
     --vp-home-hero-image-filter: blur(72px);
   }
 }
+
+.vp-doc {
+  .not-vp-doc {
+    * {
+      all: revert;
+    }
+  }
+}

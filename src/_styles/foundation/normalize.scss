@@ -186,6 +186,11 @@ ul {
 			position: absolute;
 			margin-left: -0.9375rem;
 		}
+
+		&::marker,/* Latest Chrome, Edge, Firefox */ 
+		&::-webkit-details-marker /* Safari */ {
+			content: ''
+		}
 	}
 }
 code {
