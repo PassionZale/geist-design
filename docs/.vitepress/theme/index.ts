@@ -1,6 +1,8 @@
-import { h, type App, type Component, defineAsyncComponent } from 'vue'
+import { h } from 'vue'
+import type { App, Component } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import GeistDesign from 'geist-design'
+import GeistLogo from './components/geist-logo.vue'
 
 import 'geist-design-styles/index.scss'
 import './styles/reset.scss'
@@ -18,8 +20,6 @@ for (const path in modules) {
   components.push((modules[path] as Module).default)
 }
 
-const GeistDesignLogo = defineAsyncComponent(() => import('./assets/icon.svg'))
-
 export default {
   ...DefaultTheme,
 
@@ -31,7 +31,7 @@ export default {
        * @see layout-slots https://vitepress.dev/guide/extending-default-theme#layout-slots
        */
       'nav-bar-title-before': () =>
-        h(GeistDesignLogo, { width: 24, height: 24, style: { marginRight: 8 } })
+        h(GeistLogo, { width: 24, height: 24, style: { marginRight: 8 } })
     })
   },
 
