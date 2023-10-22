@@ -24,8 +24,6 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: {
-    logo: { src: '/favicon.svg', width: 24, height: 24 },
-
     aside: false,
 
     nav,
