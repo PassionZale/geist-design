@@ -4,7 +4,7 @@
   const colors = [
     { name: 'Light', value: 'var(--geist-error-light)' },
     { name: 'Default', value: 'var(--geist-error)' },
-    { name: 'Dark', value: 'var(--geist-error-dark)' },
+    { name: 'Dark', value: 'var(--geist-error-dark)' }
   ]
 
   function valueToStyle(val: string) {
@@ -23,7 +23,7 @@
   <div class="colors">
     <div
       class="color"
-      v-for="(color, index) in colors"
+      v-for="color in colors"
       :key="color.name"
       :style="valueToStyle(color.value)"
     >
