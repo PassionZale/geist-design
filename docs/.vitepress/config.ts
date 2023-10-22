@@ -21,8 +21,6 @@ export default defineConfig({
 
   cacheDir: '../../node_modules',
 
-  cleanUrls: true,
-
   themeConfig: {
     aside: false,
 
