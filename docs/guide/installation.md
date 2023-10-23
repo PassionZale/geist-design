@@ -1,17 +1,61 @@
 # 安装
 
-## 运行脚本下载:
+使用 `pnpm` 安装
 
 ```shell
-npm i @whouu/geist-design
+pnpm add @whouu/geist-design
 ```
 
-## 引入 `@whouu/geist-design` 到你的项目中:
+使用 `npm` 安装
 
-```js
-import Vue from 'vue'
+```shell
+npm install @whouu/geist-design
+```
+
+使用 `yarn` 安装
+
+```shell
+yarn add @whouu/geist-design
+```
+
+## 🎉 快速上手
+
+在 `main.ts` 中引入下面内容
+
+```ts
+import { createApp } from 'vue'
+import App from './App.vue'
 import GeistDesign from '@whouu/geist-design'
-import '@whouu/geist-design/dist/geist-design.css' // require style
+import '@whouu/geist-design/dist/index.css'
 
-Vue.use(GeistDesign)
+createApp(App).use(GeistDesign).mount('#app')
 ```
+
+## 🪂 快速体验
+
+```html
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@whouu/geist-design/dist/index.css"
+  />
+</head>
+
+<body>
+  <div id="app">
+    <g-button auto>欢迎使用 Geist Design！</g-button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@whouu/geist-design/dist/index.umd.js"></script>
+  <script>
+    const { createApp } = Vue
+
+    const app = createApp()
+
+    app.use(GeistDesign.default)
+    app.mount('#app')
+  </script>
+</body>
+```
+
