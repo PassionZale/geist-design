@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     GButton: typeof components.GButton
     GCard: typeof components.GCard
     GCode: typeof components.GCode
+    /** PLOP_INJECT_EXPORT */
   }
 }
 

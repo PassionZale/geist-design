@@ -49,6 +49,20 @@ export const getGenerator = () => {
         type: 'add',
         path: 'src/{{kebabCase name}}/index.ts',
         templateFile: 'scripts/plop-template/component/index.hbs'
+      },
+      // modify entries
+      {
+        type: 'modify',
+        path: 'src/components.ts',
+        pattern: `/** PLOP_INJECT_EXPORT */`,
+        template:
+          'export { G{{pascalCase name}} } from "./{{kebabCase name}} \nexport * from "./{{kebabCase name}}'
+      },
+      {
+        type: 'modify',
+        path: 'src/global.d.ts',
+        pattern: `/** PLOP_INJECT_EXPORT */`,
+        template: '    G{{pascalCase name}}: typeof components.G{{pascalCase name}}'
       }
     ]
   }
