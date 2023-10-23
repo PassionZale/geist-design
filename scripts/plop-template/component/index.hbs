@@ -1,0 +1,11 @@
+import {{pascalCase name}} from './src/{{kebabCase name}}.vue'
+
+import { withInstallComponent } from '../_utils'
+
+export const G{{pascalCase name}} = withInstallComponent({{pascalCase name}})
+
+export type {{pascalCase name}}Instance = InstanceType<typeof {{pascalCase name}}>
+
+export * from './src/interface'
+
+export default G{{pascalCase name}}

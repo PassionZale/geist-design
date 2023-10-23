@@ -1,6 +1,6 @@
 /**
  * 示例 Generator
- * 
+ *
  * @returns {import('plop').PlopGeneratorConfig}
  */
 export const getGenerator = () => {

@@ -1,0 +1,11 @@
+<script setup lang="ts">
+  import { Props } from './props'
+
+  defineOptions({ name: 'G{{pascalCase name}}' })
+
+  defineProps(Props)
+</script>
+
+<template>
+  <div>G{{pascalCase name}}</div>
+</template>
