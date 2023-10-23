@@ -56,13 +56,13 @@ export const getGenerator = () => {
         path: 'src/components.ts',
         pattern: `/** PLOP_INJECT_EXPORT */`,
         template:
-          'export { G{{pascalCase name}} } from "./{{kebabCase name}} \nexport * from "./{{kebabCase name}}'
+          `export { G{{pascalCase name}} } from './{{kebabCase name}}'\nexport * from './{{kebabCase name}}'\n\n/** PLOP_INJECT_EXPORT */`
       },
       {
         type: 'modify',
         path: 'src/global.d.ts',
         pattern: `/** PLOP_INJECT_EXPORT */`,
-        template: '    G{{pascalCase name}}: typeof components.G{{pascalCase name}}'
+        template: `G{{pascalCase name}}: typeof components.G{{pascalCase name}}\n    /** PLOP_INJECT_EXPORT */`
       }
     ]
   }
