@@ -53,6 +53,12 @@ export const getGenerator = () => {
       // modify entries
       {
         type: 'modify',
+        path: 'src/_styles/index.scss',
+        pattern: `/** PLOP_INJECT_IMPORT */`,
+        template: `@import './_{{kebabCase name}}.scss';\n/** PLOP_INJECT_IMPORT */`
+      },
+      {
+        type: 'modify',
         path: 'src/components.ts',
         pattern: `/** PLOP_INJECT_EXPORT */`,
         template:
