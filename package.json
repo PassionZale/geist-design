@@ -2,19 +2,38 @@
   "name": "@whouu/geist-design",
   "version": "0.0.0",
   "type": "module",
-  "description": "",
-  "main": "index.js",
+  "description": "A Geist Design UI framework for Vue3",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/geist-design.umd.js",
+  "module": "./dist/geist-design.es.js",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/geist-design.es.js",
+      "require": "./dist/geist-design.umd.js"
+    }
+  },
+  "unpkg": "dist/geist-design.umd.js",
+  "style": "dist/index.css",
+  "sideEffects": ["dist/index.css"],
   "scripts": {
     "start": "vite -c ./start/vite.config.ts",
+    "build": "vue-tsc --noEmit && vite build && vite build -c vite.config.css.ts",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "vue component",
+    "geist",
+    "vue ui"
+  ],
   "author": "Lei Zhang",
   "email": "whouu@qq.com",
-  "homepage": "https://lovchun.com",
+  "homepage": "https://geist-design.lovchun.com",
   "repository": "https://github.com/PassionZale/geist-design",
   "license": "MIT",
   "devDependencies": {
@@ -24,8 +43,10 @@
     "@typescript-eslint/parser": "^6.7.5",
     "@vitejs/plugin-vue": "^4.4.0",
     "@whouu/geist-design-icons": "^0.0.3",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8.51.0",
     "eslint-plugin-vue": "^9.17.0",
+    "postcss-preset-env": "^9.2.0",
     "prettier": "^3.0.3",
     "prismjs": "^1.29.0",
     "sass": "^1.69.3",
