@@ -1,3 +1,46 @@
 .g-badge {
-  
+  padding: 0 4px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: rem(10);
+  font-weight: bold;
+  line-height: rem(15);
+  min-width: rem(15);
+  border-radius: 8px;
+  text-align: center;
+  &.success {
+    background-color: var(--geist-success);
+  }
+  &.warning {
+    background-color: var(--geist-warning);
+  }
+  &.error {
+    background-color: var(--geist-error);
+  }
+  &.dot {
+    width: rem(6);
+    height: rem(6);
+    border-radius: 50%;
+    padding: 0;
+    min-width: unset;
+    overflow: hidden;
+    line-height: 0;
+    color: transparent;
+  }
+}
+
+.g-badge-group {
+  position: relative;
+  display: inline-block;
+  .g-badge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(45%, -45%);
+    vertical-align: baseline;
+    &.dot {
+      top: 0.3em;
+    }
+  }
 }
