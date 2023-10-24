@@ -10,4 +10,7 @@ export * from './card'
 export { GCode } from './code'
 export * from './code'
 
+export { GBadge } from './badge'
+export * from './badge'
+
 /** PLOP_INJECT_EXPORT */
