@@ -1,6 +1,6 @@
 import type { HeadConfig } from 'vitepress'
 
-export const head: HeadConfig[] = [
+const defaultHead: HeadConfig[] = [
   /** 标签栏略缩图 */
   [
     'link',
@@ -14,7 +14,8 @@ export const head: HeadConfig[] = [
     'meta',
     {
       name: 'viewport',
-      content: 'initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover'
+      content:
+        'initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover'
     }
   ],
   /** Keywords */
@@ -65,12 +66,32 @@ export const head: HeadConfig[] = [
       content: 'geist design 基于 vercel design 的 vue3 组件库'
     }
   ],
-    /** OG site_name */
-    [
-      'meta',
-      {
-        property: 'og:site_name',
-        content: 'Geist Design'
-      }
-    ]
+  /** OG site_name */
+  [
+    'meta',
+    {
+      property: 'og:site_name',
+      content: 'Geist Design'
+    }
+  ]
 ] as HeadConfig[]
+
+const vercelAnalytics: HeadConfig[] = [
+  [
+    'script',
+    {},
+    `window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`
+  ],
+  [
+    'script',
+    {
+      src: '/_vercel/insights/script.js',
+      defer: ''
+    }
+  ]
+] as HeadConfig[]
+
+export const head =
+  process.env.NODE_ENV === 'production'
+    ? defaultHead.concat(vercelAnalytics)
+    : defaultHead
