@@ -18,7 +18,7 @@ npm install @whouu/geist-design
 yarn add @whouu/geist-design
 ```
 
-## 🎉 快速上手
+### 🎉 快速上手
 
 在 `main.ts` 中引入下面内容
 
@@ -31,7 +31,7 @@ import '@whouu/geist-design/dist/index.css'
 createApp(App).use(GeistDesign).mount('#app')
 ```
 
-## 🪂 快速体验
+### 🪂 快速体验
 
 ```html
 <head>
