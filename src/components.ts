@@ -13,4 +13,7 @@ export * from './code'
 export { GBadge } from './badge'
 export * from './badge'
 
+export { GLink } from './link'
+export * from './link'
+
 /** PLOP_INJECT_EXPORT */
