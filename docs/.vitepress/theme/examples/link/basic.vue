@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="not-vp-doc">
+  <div>
     <p>
       <g-link href="https://github.com/PassionZale/geist-design">Github url</g-link>
     </p>

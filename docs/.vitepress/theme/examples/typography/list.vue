@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="not-vp-doc">
+  <div>
     <ul>
       <li>Static websites and static generators (React, Vue, Angular, etc)</li>
       <li>Code that renders HTML on the server-side</li>

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-  import { reactive, onMounted, ref, onUnmounted } from 'vue'
-  import { getRealShape } from '../uitls/bounding'
+  import { reactive, onMounted, ref } from 'vue'
   import * as clipboard from '../uitls/clipboard'
   import { data as examples } from '../data/examples.data'
 
@@ -25,28 +24,7 @@
 
   onMounted(() => {
     initState()
-
-    resize()
-
-    window.addEventListener('resize', resize)
   })
-
-  onUnmounted(() => {
-    window.removeEventListener('resize', resize)
-  })
-
-  function resize() {
-    try {
-      if (detailsRef.value) {
-        const { width } = getRealShape(detailsRef.value)
-        if (width) {
-          prismRef.value?.setAttribute('style', `width: ${width}px;`)
-        }
-      }
-    } catch (error) {
-      console.error(error)
-    }
-  }
 
   async function initState() {
     const arrs = props.name.split('-')
@@ -64,7 +42,7 @@
 </script>
 
 <template>
-  <div class="ex-code">
+  <div class="vp-raw ex-code">
     <h3 class="g-subheading code-name">{{ state.codeName }}</h3>
 
     <p class="desc" v-if="$slots.default">

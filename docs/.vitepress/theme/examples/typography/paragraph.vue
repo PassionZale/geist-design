@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="not-vp-doc">
+  <div>
     <p>{{ text }}</p>
 
     <p>
