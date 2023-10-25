@@ -57,3 +57,20 @@ p {
     }
   }
 }
+
+.VPPage {
+  padding: 32px 24px 96px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .VPPage {
+    padding: 48px 32px 128px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPPage {
+    padding: 32px 32px 0;
+  }
+}

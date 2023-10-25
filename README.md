@@ -90,7 +90,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [ ] Input / 输入框
 - [ ] Keyboard / 键盘
 - [ ] Layout / 布局
-- [ ] Link / 链接
+- [x] Link / 链接
 - [ ] More / 更多
 - [ ] Note / 提示
 - [ ] Popover / 下拉菜单

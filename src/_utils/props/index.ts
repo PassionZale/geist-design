@@ -46,26 +46,26 @@ export const setNumberProp = (
  */
 export const setStringProp = <T extends string>(
   defaultValue?: T,
-  validator?: ValidatorFn<T>
+  validator?: (value: T) => boolean
 ): {
   readonly type: PropType<T>
   readonly default: T extends string ? T : undefined
   readonly validator?: ValidatorFn<T>
 } => {
-  const props = {
+  const prop = {
     type: String as unknown as PropType<T>,
     default: defaultValue
   } as {
     type: PropType<T>
     default: T extends string ? T : undefined
-    validator?: ValidatorFn<T>
+    validator?: (value: T) => boolean
   }
 
   if (validator) {
-    props.validator = validator
+    prop.validator = validator
   }
 
-  return props
+  return prop
 }
 
 /**

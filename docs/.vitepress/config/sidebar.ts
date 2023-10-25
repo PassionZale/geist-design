@@ -25,7 +25,8 @@ export const sidebar = {
         { text: 'Button', link: '/components/button' },
         { text: 'Card', link: '/components/card' },
         { text: 'Code', link: '/components/code' },
-        { text: 'Badge', link: '/components/badge' } /** PLOP_INJECT_SIDEBAR */
+        { text: 'Badge', link: '/components/badge' },
+        { text: 'Link', link: '/components/link' } /** PLOP_INJECT_SIDEBAR */
       ]
     }
   ]
