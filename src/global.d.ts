@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     GCode: typeof components.GCode
     GBadge: typeof components.GBadge
     GLink: typeof components.GLink
+    GDot: typeof components.GDot
     /** PLOP_INJECT_EXPORT */
   }
 }
