@@ -23,6 +23,7 @@
   "scripts": {
     "start": "vite -c ./start/vite.config.ts",
     "build": "vue-tsc --noEmit && vite build && vite build -c vite.config.css.ts",
+    "release": "npm publish --registry https://registry.npmjs.org --access public",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
