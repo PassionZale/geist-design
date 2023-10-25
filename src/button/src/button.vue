@@ -1,11 +1,11 @@
 <script lang="ts" setup>
   import { computed, reactive } from 'vue'
   import { Props } from './props'
-  import type { Emits } from './emits'
+  import type { ButtonEmits } from './emits'
 
   defineOptions({ name: 'GButton' })
 
-  defineEmits<Emits>()
+  defineEmits<ButtonEmits>()
 
   const props = defineProps(Props)
 
@@ -41,7 +41,7 @@
     class="g-btn"
     :class="classes"
     :tabindex="tabindex"
-    @click="$emit('click')"
+    @click="$event => $emit('click', $event)"
     @keyup.tab="state.isFocus = true"
     @blur="state.isFocus = false"
   >

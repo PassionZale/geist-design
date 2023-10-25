@@ -60,7 +60,6 @@
 | **circular**  | 圆角更大的按钮 | `boolean`   | -                                                                 | `false`   |
 | **auto**      | 自适应宽度     | `boolean`   | -                                                                 | `false`   |
 | **ghost**     | 背景与边框反色 | `boolean`   | -                                                                 | `false`   |
-| **effect**    | 点击动画       | `boolean`   | -                                                                 | `true`    |
 | **icon**      | 设置图标(左边) | `component` | -                                                                 | -         |
 | **iconRight** | 设置图标(右边) | `component` | -                                                                 | -         |
 

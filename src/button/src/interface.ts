@@ -1,2 +1,2 @@
 export type { ButtonProps } from './props'
-export type * as ButtonEmits from './emits'
+export type { ButtonEmits } from './emits'
