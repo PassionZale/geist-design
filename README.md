@@ -69,3 +69,45 @@ createApp(App).use(GeistDesign).mount('#app')
 ## 💬 执照
 
 [MIT](https://github.com/PassionZale/geist-design/blob/main/LICENSE)
+
+## ✨ 特性
+
+- [x] Avatar / 头像
+- [x] Badge / 徽章
+- [x] Button / 按钮
+- [x] Card / 卡片
+- [ ] Checkbox / 多选框
+- [x] Code / 代码
+- [ ] Collapse / 折叠框
+- [ ] Description / 描述
+- [ ] Dialog / 对话框
+- [ ] Display / 陈列框
+- [ ] Dot / 点
+- [ ] Fieldset / 控件组
+- [ ] Files / 文件
+- [ ] Grid / 栅格
+- [ ] Image / 图片
+- [ ] Input / 输入框
+- [ ] Keyboard / 键盘
+- [ ] Layout / 布局
+- [ ] Link / 链接
+- [ ] More / 更多
+- [ ] Note / 提示
+- [ ] Popover / 下拉菜单
+- [ ] Progress / 进度条
+- [ ] Radio / 单选框
+- [ ] Rate / 评级
+- [ ] Select / 选择器
+- [ ] Slider / 滑块
+- [ ] Snippet / 片段
+- [ ] Spacer / 占位符
+- [ ] Spinner / 指示器
+- [ ] Switcher / 切换按钮
+- [ ] Table / 表格
+- [ ] Tabs / 选项卡
+- [ ] Tag / 标签
+- [ ] Textarea / 文本输入框
+- [ ] Toast / 通知
+- [ ] Toggle / 开关
+- [ ] Tooltip / 提示框
+- [ ] User / 用户
