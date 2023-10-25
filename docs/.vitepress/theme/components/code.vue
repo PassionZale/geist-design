@@ -22,9 +22,7 @@
   const detailsRef = ref<HTMLElement | null>(null)
   const prismRef = ref<HTMLElement | null>(null)
 
-  onMounted(() => {
-    initState()
-  })
+  onMounted(() => initState())
 
   async function initState() {
     const arrs = props.name.split('-')
@@ -86,6 +84,13 @@
     line-height: 1;
     margin-bottom: 0;
   }
+
+  p {
+    margin: 1rem 0 !important;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
   .desc {
     margin-top: 0;
     color: var(--accents-5);
