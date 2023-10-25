@@ -8,15 +8,15 @@ p {
   margin: 0;
 }
 
-// .window-scrollbar::-webkit-scrollbar {
-//   width: 5px;
-//   background-color: var(--accents-1);
-// }
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--accents-1);
+}
 
-// .window-scrollbar::-webkit-scrollbar-thumb {
-//   background-color: var(--accents-2);
-//   border-radius: 5px;
-// }
+body::-webkit-scrollbar-thumb {
+  background-color: var(--accents-2);
+  border-radius: 5px;
+}
 
 :root {
   --vp-c-bg: var(--geist-background);
@@ -58,43 +58,4 @@ p {
   :root {
     --vp-home-hero-image-filter: blur(72px);
   }
-}
-
-.vp-doc {
-  .not-vp-doc {
-    * {
-      all: revert;
-    }
-  }
-
-  // a.g-link {
-  //   font-weight: normal;
-  //   color: inherit;
-  //   text-decoration: none;
-
-  //   display: inline-flex;
-  //   line-height: inherit;
-  //   color: inherit;
-  //   svg {
-  //     display: inline-flex;
-  //     margin: 0 5px;
-  //     color: inherit;
-  //     width: 1em;
-  //     height: 1em;
-  //   }
-  //   &:hover {
-  //     .more {
-  //       padding-left: 8px;
-  //     }
-  //   }
-  //   &.no-decoration {
-  //     text-decoration: none;
-  //   }
-  //   &.bold {
-  //     font-weight: 700;
-  //   }
-  //   &.color {
-  //     color: var(--geist-success);
-  //   }
-  // }
 }
