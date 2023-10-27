@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     GLink: typeof components.GLink
     GDot: typeof components.GDot
     GDescription: typeof components.GDescription
+    GDisplay: typeof components.GDisplay
     /** PLOP_INJECT_EXPORT */
   }
 }

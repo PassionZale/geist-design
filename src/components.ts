@@ -22,4 +22,7 @@ export * from './dot'
 export { GDescription } from './description'
 export * from './description'
 
+export { GDisplay } from './display'
+export * from './display'
+
 /** PLOP_INJECT_EXPORT */
