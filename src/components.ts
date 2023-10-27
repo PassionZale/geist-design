@@ -16,6 +16,9 @@ export * from './badge'
 export { GLink } from './link'
 export * from './link'
 
+export { GDot } from './dot'
+export * from './dot'
+
 export { GDescription } from './description'
 export * from './description'
 
