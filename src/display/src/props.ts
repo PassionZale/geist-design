@@ -3,7 +3,7 @@ import { setBooleanProp, setStringProp } from '../../_utils'
 
 export const Props = {
   /** 内容的宽度 */
-  width: setStringProp<string>('auto'),
+  width: setStringProp(),
   /** 说明文字 */
   caption: setStringProp(),
   /** 阴影 */
