@@ -31,4 +31,7 @@ export * from './fieldset'
 export { GKeyboard } from './keyboard'
 export * from './keyboard'
 
+export { GSnippet } from './snippet'
+export * from './snippet'
+
 /** PLOP_INJECT_EXPORT */

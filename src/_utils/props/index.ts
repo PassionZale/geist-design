@@ -139,3 +139,15 @@ export const setArrayProp = <T>(
     default: (): T | null => defaultValue
   } as const
 }
+
+export const setStringArrayProp = <T>(
+  defaultValue = null
+): {
+  readonly type: PropType<T | string>
+  readonly default: () => T | null
+} => {
+  return {
+    type: [Array, String] as unknown as PropType<T | string>,
+    default: (): T | null => defaultValue
+  } as const
+}
