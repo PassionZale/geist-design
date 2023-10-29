@@ -21,18 +21,18 @@ export const sidebar = {
     {
       text: '组件',
       items: [
-        { text: 'Avatar', link: '/components/avatar' },
-        { text: 'Button', link: '/components/button' },
-        { text: 'Card', link: '/components/card' },
-        { text: 'Code', link: '/components/code' },
-        { text: 'Badge', link: '/components/badge' },
-        { text: 'Link', link: '/components/link' },
-        { text: 'Dot', link: '/components/dot' },
-        { text: 'Description', link: '/components/description' },
-        { text: 'Display', link: '/components/display' },
-        { text: 'Fieldset', link: '/components/fieldset' },
-        { text: 'Keyboard', link: '/components/keyboard' },
-        { text: 'Snippet', link: '/components/snippet' } /** PLOP_INJECT_SIDEBAR */
+        { text: 'Avatar 头像', link: '/components/avatar' },
+        { text: 'Badge 徽章', link: '/components/badge' },
+        { text: 'Button 按钮', link: '/components/button' },
+        { text: 'Card 卡片', link: '/components/card' },
+        { text: 'Code 代码', link: '/components/code' },
+        { text: 'Description 描述', link: '/components/description' },
+        { text: 'Display 陈列框', link: '/components/display' },
+        { text: 'Dot 点', link: '/components/dot' },
+        { text: 'Fieldset 控件组', link: '/components/fieldset' },
+        { text: 'Keyboard 键盘', link: '/components/keyboard' },
+        { text: 'Link 链接', link: '/components/link' },
+        { text: 'Snippet 片段', link: '/components/snippet' } /** PLOP_INJECT_SIDEBAR */
       ]
     }
   ]

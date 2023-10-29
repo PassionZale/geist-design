@@ -79,16 +79,16 @@ createApp(App).use(GeistDesign).mount('#app')
 - [ ] Checkbox / 多选框
 - [x] Code / 代码
 - [ ] Collapse / 折叠框
-- [ ] Description / 描述
+- [x] Description / 描述
 - [ ] Dialog / 对话框
-- [ ] Display / 陈列框
+- [x] Display / 陈列框
 - [x] Dot / 点
-- [ ] Fieldset / 控件组
+- [x] Fieldset / 控件组
 - [ ] Files / 文件
 - [ ] Grid / 栅格
 - [ ] Image / 图片
 - [ ] Input / 输入框
-- [ ] Keyboard / 键盘
+- [x] Keyboard / 键盘
 - [ ] Layout / 布局
 - [x] Link / 链接
 - [ ] More / 更多
@@ -99,7 +99,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [ ] Rate / 评级
 - [ ] Select / 选择器
 - [ ] Slider / 滑块
-- [ ] Snippet / 片段
+- [x] Snippet / 片段
 - [ ] Spacer / 占位符
 - [ ] Spinner / 指示器
 - [ ] Switcher / 切换按钮
