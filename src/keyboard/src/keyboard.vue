@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <kbd class="g-kbd" :class="{ 'g-kbd-small': small }">
+  <kbd class="g-keyboard" :class="{ small }">
     <span v-if="shift">⇧</span>
     <span v-if="isOption">⌥</span>
     <span v-if="command">⌘</span>

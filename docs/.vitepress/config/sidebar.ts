@@ -30,7 +30,8 @@ export const sidebar = {
         { text: 'Dot', link: '/components/dot' },
         { text: 'Description', link: '/components/description' },
         { text: 'Display', link: '/components/display' },
-        { text: 'Fieldset', link: '/components/fieldset' } /** PLOP_INJECT_SIDEBAR */
+        { text: 'Fieldset', link: '/components/fieldset' },
+        { text: 'Keyboard', link: '/components/keyboard' } /** PLOP_INJECT_SIDEBAR */
       ]
     }
   ]
