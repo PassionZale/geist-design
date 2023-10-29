@@ -140,14 +140,20 @@ export const setArrayProp = <T>(
   } as const
 }
 
-export const setStringArrayProp = <T>(
-  defaultValue = null
+/**
+ * 设置 string & array 类型的 props 参数
+ * 
+ * @param {string | array} [defaultValue = undefined]
+ * @returns { Object } 配置对象
+ */
+export const setStringArrayProp = <T = string>(
+  defaultValue?: T
 ): {
   readonly type: PropType<T | string>
-  readonly default: () => T | null
+  readonly default: () => T | undefined
 } => {
   return {
     type: [Array, String] as unknown as PropType<T | string>,
-    default: (): T | null => defaultValue
+    default: (): T | undefined => defaultValue
   } as const
 }
