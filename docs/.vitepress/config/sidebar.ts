@@ -29,7 +29,8 @@ export const sidebar = {
         { text: 'Link', link: '/components/link' },
         { text: 'Dot', link: '/components/dot' },
         { text: 'Description', link: '/components/description' },
-        { text: 'Display', link: '/components/display' } /** PLOP_INJECT_SIDEBAR */
+        { text: 'Display', link: '/components/display' },
+        { text: 'Fieldset', link: '/components/fieldset' } /** PLOP_INJECT_SIDEBAR */
       ]
     }
   ]
