@@ -28,4 +28,7 @@ export * from './display'
 export { GFieldset } from './fieldset'
 export * from './fieldset'
 
+export { GKeyboard } from './keyboard'
+export * from './keyboard'
+
 /** PLOP_INJECT_EXPORT */
