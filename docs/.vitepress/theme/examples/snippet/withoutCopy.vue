@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  defineOptions({ name: 'ex-snippet-without-copy' })
+  defineOptions({ name: 'ex-snippet-withoutCopy' })
 </script>
 
 <template>
