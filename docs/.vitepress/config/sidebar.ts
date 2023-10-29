@@ -31,7 +31,8 @@ export const sidebar = {
         { text: 'Description', link: '/components/description' },
         { text: 'Display', link: '/components/display' },
         { text: 'Fieldset', link: '/components/fieldset' },
-        { text: 'Keyboard', link: '/components/keyboard' } /** PLOP_INJECT_SIDEBAR */
+        { text: 'Keyboard', link: '/components/keyboard' },
+        { text: 'Snippet', link: '/components/snippet' } /** PLOP_INJECT_SIDEBAR */
       ]
     }
   ]
