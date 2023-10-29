@@ -25,4 +25,7 @@ export * from './description'
 export { GDisplay } from './display'
 export * from './display'
 
+export { GFieldset } from './fieldset'
+export * from './fieldset'
+
 /** PLOP_INJECT_EXPORT */

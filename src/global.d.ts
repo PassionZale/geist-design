@@ -16,6 +16,7 @@ declare module '@vue/runtime-core' {
     GDot: typeof components.GDot
     GDescription: typeof components.GDescription
     GDisplay: typeof components.GDisplay
+    GFieldset: typeof components.GFieldset
     /** PLOP_INJECT_EXPORT */
   }
 }
