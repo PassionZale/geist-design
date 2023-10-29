@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { reactive, onMounted, ref } from 'vue'
+  import { reactive, onMounted } from 'vue'
   import * as clipboard from '../uitls/clipboard'
   import { data as examples } from '../data/examples.data'
 
@@ -19,9 +19,6 @@
     codeTemplate: ''
   })
 
-  const detailsRef = ref<HTMLElement | null>(null)
-  const prismRef = ref<HTMLElement | null>(null)
-
   onMounted(() => initState())
 
   async function initState() {
@@ -40,34 +37,34 @@
 </script>
 
 <template>
-  <div class="vp-raw ex-code">
-    <h3 class="g-subheading code-name">{{ state.codeName }}</h3>
+  <client-only>
+    <div class="vp-raw ex-code">
+      <h3 class="g-subheading code-name">{{ state.codeName }}</h3>
 
-    <p class="desc" v-if="$slots.default">
-      <slot></slot>
-    </p>
+      <p class="desc" v-if="$slots.default">
+        <slot></slot>
+      </p>
 
-    <g-card class="ex-code-box" :class="{ 'box-hidden-code': hiddenCode }">
-      <component :is="name" />
-    </g-card>
+      <g-card class="ex-code-box" :class="{ 'box-hidden-code': hiddenCode }">
+        <component :is="name" />
+      </g-card>
 
-    <details class="details" ref="detailsRef" v-if="!hiddenCode">
-      <summary>
-        <div class="summary-row">
-          <span class="preview">
-            <ex-icon-arrow class="down" />
-            代码预览
-          </span>
+      <details class="details" v-if="!hiddenCode">
+        <summary>
+          <div class="summary-row">
+            <span class="preview">
+              <ex-icon-arrow class="down" />
+              代码预览
+            </span>
 
-          <ex-icon-copy class="copy" @click.stop.prevent="copy" />
-        </div>
-      </summary>
+            <ex-icon-copy class="copy" @click.stop.prevent="copy" />
+          </div>
+        </summary>
 
-      <div ref="prismRef">
         <ex-prism class="ex-source-code" :code="state.codeTemplate" />
-      </div>
-    </details>
-  </div>
+      </details>
+    </div>
+  </client-only>
 </template>
 
 <style lang="scss" scoped>
