@@ -32,7 +32,8 @@ export const sidebar = {
         { text: 'Fieldset 控件组', link: '/components/fieldset' },
         { text: 'Keyboard 键盘', link: '/components/keyboard' },
         { text: 'Link 链接', link: '/components/link' },
-        { text: 'Snippet 片段', link: '/components/snippet' } /** PLOP_INJECT_SIDEBAR */
+        { text: 'Snippet 片段', link: '/components/snippet' },
+        { text: 'Spacer', link: '/components/spacer' } /** PLOP_INJECT_SIDEBAR */
       ]
     }
   ]
