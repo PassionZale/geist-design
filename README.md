@@ -100,7 +100,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [ ] Select / 选择器
 - [ ] Slider / 滑块
 - [x] Snippet / 片段
-- [ ] Spacer / 占位符
+- [x] Spacer / 占位符
 - [ ] Spinner / 指示器
 - [ ] Switcher / 切换按钮
 - [ ] Table / 表格
