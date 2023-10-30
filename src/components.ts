@@ -34,4 +34,7 @@ export * from './keyboard'
 export { GSnippet } from './snippet'
 export * from './snippet'
 
+export { GSpacer } from './spacer'
+export * from './spacer'
+
 /** PLOP_INJECT_EXPORT */

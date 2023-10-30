@@ -19,6 +19,7 @@ declare module '@vue/runtime-core' {
     GFieldset: typeof components.GFieldset
     GKeyboard: typeof components.GKeyboard
     GSnippet: typeof components.GSnippet
+    GSpacer: typeof components.GSpacer
     /** PLOP_INJECT_EXPORT */
   }
 }
