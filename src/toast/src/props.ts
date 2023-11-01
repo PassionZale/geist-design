@@ -12,7 +12,7 @@ export const Props = {
   /**
    * 类型
    *
-   * @values success warning error normal
+   * @values success warning danger normal
    */
   type: setStringProp<ToastTypes>('normal'),
   /** 按钮文案 */

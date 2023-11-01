@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { reactive, onMounted } from 'vue'
+  import { GToast } from 'geist-design'
   import * as clipboard from '../uitls/clipboard'
   import { data as examples } from '../data/examples.data'
 
@@ -33,6 +34,8 @@
 
   function copy() {
     clipboard.copy(state.codeTemplate)
+
+    GToast.success('Code copied successfully!')
   }
 </script>
 

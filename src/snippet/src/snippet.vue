@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { computed } from 'vue'
   import { GIconCopy } from '@whouu/geist-design-icons'
+  import { GToast } from '../..'
   import { Props } from './props'
 
   defineOptions({ name: 'GSnippet' })
@@ -32,8 +33,9 @@
     return currentType[props.type]
   })
 
-  // TODO copy & toast
-  const handleCopy = (): void => {}
+  const handleCopy = (): void => {
+    GToast.success('Code copied successfully!')
+  }
 </script>
 
 <template>

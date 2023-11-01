@@ -148,8 +148,12 @@ export const useToast = (): UseToastReturn => {
       clearTimeout(timer)
     }, 0)
 
-    // 若 props.duration isNaN，则用 4500 默认填充
-    const duration = props.duration === props.duration ? 4500 : props.duration
+    // duration 默认 4500ms
+    let duration = 4500
+
+    if (props.duration && !Number.isNaN(+props.duration)) {
+      duration = props.duration
+    }
 
     // duration 结束后移除自身
     const _timer = setTimeout(() => {

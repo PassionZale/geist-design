@@ -107,7 +107,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [ ] Tabs / 选项卡
 - [ ] Tag / 标签
 - [ ] Textarea / 文本输入框
-- [ ] Toast / 通知
+- [x] Toast / 通知
 - [ ] Toggle / 开关
 - [ ] Tooltip / 提示框
 - [ ] User / 用户
