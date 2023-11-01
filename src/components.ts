@@ -37,4 +37,7 @@ export * from './snippet'
 export { GSpacer } from './spacer'
 export * from './spacer'
 
+export { GToast } from './toast'
+export * from './toast'
+
 /** PLOP_INJECT_EXPORT */

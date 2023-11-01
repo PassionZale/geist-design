@@ -1,0 +1,114 @@
+.g-toast-area {
+  position: fixed;
+  bottom: rem(10);
+  right: rem(20);
+  max-width: rem(420);
+  z-index: 2000;
+  transition:
+    transform 0.4s,
+    opacity 0.4s ease;
+
+  @include layout(xs) {
+    left: 5vw;
+    right: 5vw;
+    width: 90vw;
+
+    .g-toast-container {
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    .g-toast-container {
+      transform: translate3d(0, 0, 0) scale(1);
+
+      &:nth-last-child(2) {
+        transform: translate3d(0, -80px, 0) scale(1);
+      }
+
+      &:nth-last-child(3) {
+        transform: translate3d(0, -160px, 0) scale(1);
+      }
+    }
+  }
+}
+
+.g-toast-container {
+  opacity: 0;
+  transform: translate3d(0, 100%, 0) scale(1);
+  transition: all 0.4s ease;
+  position: absolute;
+  bottom: 0;
+  height: rem(72);
+  right: 0;
+  &.visible {
+    opacity: 1;
+    transform: none;
+  }
+  &:nth-last-child(1) {
+    z-index: 2004;
+  }
+  &:nth-last-child(2) {
+    transform: translate3d(0, -14px, 0) scale(0.95);
+    z-index: 2003;
+  }
+  &:nth-last-child(3) {
+    transform: translate3d(0, -28px, 0) scale(0.9);
+    z-index: 2002;
+  }
+  &:nth-last-child(4) {
+    transform: translate3d(0, -36px, 0) scale(0.85);
+    z-index: 2001;
+  }
+  &:nth-last-child(5) {
+    transform: translate3d(0, -46px, 0) scale(0.8);
+    z-index: 2000;
+  }
+  &:nth-last-child(n + 4) {
+    visibility: hidden;
+  }
+}
+
+.g-toast {
+  padding: 0 rem(20);
+  border-radius: 5px;
+  border: 0;
+  width: rem(420);
+  max-width: 100%;
+  height: rem(60);
+  color: var(--geist-foreground);
+  background-color: var(--geist-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.12);
+  font-size: rem(14);
+  box-sizing: border-box;
+
+  &.success {
+    background-color: var(--geist-success);
+    color: var(--geist-background);
+  }
+
+  &.warning {
+    background-color: var(--geist-warning);
+    color: var(--geist-background);
+  }
+
+  &.danger {
+    background-color: var(--geist-error);
+    color: var(--geist-background);
+  }
+  
+  .message {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    &.action {
+      max-width: 70%;
+    }
+  }
+}

@@ -2,9 +2,9 @@ import type { ExtractPropTypes } from 'vue'
 import type { GeistIcon } from '../../_utils'
 import { setBooleanProp, setStringProp, setObjectProp } from '../../_utils'
 
-export type ButtonSize = 'mini' | 'small' | 'medium' | 'big' | 'huge'
+export type ButtonSizes = 'mini' | 'small' | 'medium' | 'big' | 'huge'
 
-export type ButtonType = 'primary' | 'success' | 'warning' | 'danger' | 'abort' | 'normal'
+export type ButtonTypes = 'primary' | 'success' | 'warning' | 'danger' | 'abort' | 'normal'
 
 export const Props = {
   /**
@@ -12,13 +12,13 @@ export const Props = {
    * 
    * @values mini small medium big huge
    */
-  size: setStringProp<ButtonSize>('medium'),
+  size: setStringProp<ButtonSizes>('medium'),
   /**
    * 按钮类型
    * 
    * @values primary success warning danger abort normal
    */
-  type: setStringProp<ButtonType>(),
+  type: setStringProp<ButtonTypes>(),
   /** 是否在加载中 */
   loading: setBooleanProp(),
   /** 按钮是否禁用 */
