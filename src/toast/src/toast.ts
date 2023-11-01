@@ -126,7 +126,7 @@ export const useToast = (): UseToastReturn => {
    */
   const createToastInstance = (props: ToastProps): ComponentInternalInstance => {
     const vNode: VNode = h(ToastConstructor, {
-      id: seed, // 添加 id
+      id: seed++, // 添加 id
       ...props
     })
 
