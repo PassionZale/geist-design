@@ -9,7 +9,7 @@ export const Props = {
    * 
    * @values success warning danger
    */
-  type: setStringProp<TagTypes>('danger')
+  type: setStringProp<TagTypes>()
 } as const
 
 export type TagProps = ExtractPropTypes<typeof Props>

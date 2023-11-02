@@ -34,7 +34,9 @@ export const sidebar = {
         { text: 'Link 链接', link: '/components/link' },
         { text: 'Snippet 片段', link: '/components/snippet' },
         { text: 'Spacer 占位符', link: '/components/spacer' },
-        { text: 'Toast 通知', link: '/components/toast' } /** PLOP_INJECT_SIDEBAR */
+        { text: 'Toast 通知', link: '/components/toast' },
+        { text: 'Tag', link: '/components/tag' },
+        { text: 'User', link: '/components/user' } /** PLOP_INJECT_SIDEBAR */
       ]
     }
   ]
