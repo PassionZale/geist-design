@@ -28,4 +28,4 @@
 
 1. 所有的图标都是高质量的，且都是一个 Vue 组件；
 2. 支持单个按需引入图标；
-3. 数量巨大，包含 [feathericons](https://feathericons.com/) 的 300个 svg 图标；
+3. 更详细的文档请参考 [组件-图标](/components/icons)；

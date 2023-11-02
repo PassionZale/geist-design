@@ -57,7 +57,7 @@
           <div class="summary-row">
             <span class="preview">
               <ex-icon-arrow class="down" />
-              代码预览
+              预览代码
             </span>
 
             <ex-icon-copy class="copy" @click.stop.prevent="copy" />
