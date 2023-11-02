@@ -1,0 +1,39 @@
+.g-user {
+  display: inline-flex;
+  padding: 0 var(--geist-gap-half);
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.g-user-avatar {
+  width: 32px;
+  height: 32px;
+}
+.g-user-content {
+  margin-left: var(--geist-gap-half);
+  white-space: nowrap;
+  line-height: 1.1rem;
+
+  .g-user-name {
+    font-size: 0.89rem;
+    font-weight: 500;
+    color: var(--accents-8);
+  }
+
+  .g-user-description {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--accents-6);
+
+    & > * {
+      margin: 0;
+    }
+
+    a {
+      &:hover {
+        background-color: unset;
+        opacity: 0.7;
+      }
+    }
+  }
+}

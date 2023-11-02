@@ -40,4 +40,10 @@ export * from './spacer'
 export { GToast } from './toast'
 export * from './toast'
 
+export { GUser } from './user'
+export * from './user'
+
+export { GTag } from './tag'
+export * from './tag'
+
 /** PLOP_INJECT_EXPORT */

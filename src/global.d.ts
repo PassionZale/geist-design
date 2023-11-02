@@ -21,6 +21,8 @@ declare module '@vue/runtime-core' {
     GSnippet: typeof components.GSnippet
     GSpacer: typeof components.GSpacer
     GToast: typeof components.GToast
+    GUser: typeof components.GUser
+    GTag: typeof components.GTag
     /** PLOP_INJECT_EXPORT */
   }
 }
