@@ -17,7 +17,7 @@
 <template>
   <div :id="`g-toast-${uid}`" class="g-toast-container">
     <div class="g-toast" :class="type && type">
-      <span class="message" :class="{ action }">{{ uid }} {{ message }}</span>
+      <span class="message" :class="{ action }">{{ message }}</span>
       <g-button
         v-if="action"
         auto
