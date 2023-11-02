@@ -2,21 +2,28 @@
   import image from './assets/geist-design.svg'
   import { GIconAirplay } from '@whouu/geist-design-icons'
   import { GToast } from 'geist-design'
+  import { ref, watchEffect } from 'vue'
 
-  function handleToast1 (): void {
+  function handleToast1(): void {
     GToast.success('handleToast1')
   }
 
-  function handleToast2 (): void {
+  function handleToast2(): void {
     GToast.danger('handleToast2')
   }
 
-  function handleToast3 (): void {
+  function handleToast3(): void {
     GToast.closeAll()
   }
+
+  const textarea = ref('123')
+
+  watchEffect(() => console.log(textarea.value))
 </script>
 
 <template>
+  <g-textarea v-model="textarea"></g-textarea>
+
   <g-icon-airplay size="34" color="red" />
   <br />
 

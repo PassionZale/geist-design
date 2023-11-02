@@ -46,4 +46,7 @@ export * from './user'
 export { GTag } from './tag'
 export * from './tag'
 
+export { GTextarea } from './textarea'
+export * from './textarea'
+
 /** PLOP_INJECT_EXPORT */

@@ -23,6 +23,7 @@ declare module '@vue/runtime-core' {
     GToast: typeof components.GToast
     GUser: typeof components.GUser
     GTag: typeof components.GTag
+    GTextarea: typeof components.GTextarea
     /** PLOP_INJECT_EXPORT */
   }
 }
