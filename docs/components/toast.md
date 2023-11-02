@@ -28,23 +28,24 @@
 
 <ex-footer title="Options">
 
-| 属性         | 描述     | 类型                                  | 推荐值 | 默认     |
-| ------------ | -------- | ------------------------------------- | ------ | -------- |
-| **message**  | 提示语   | `string`                              | -      | -        |
-| **type**     | 类型     | `success` `warning` `danger` `normal` | -      | `normal` |
-| **duration** | 持续时间 | `number`                              | -      | `4500`   |
-| **action**   | 按钮文案 | `string`                              | -      | -        |
-| **handler**  | 按钮回调 | `function`                            | -      | -        |
+| 属性         | 描述                                | 类型                                  | 推荐值 | 默认     |
+| ------------ | ----------------------------------- | ------------------------------------- | ------ | -------- |
+| **message**  | 提示语                              | `string`                              | -      | -        |
+| **type**     | 类型                                | `success` `warning` `danger` `normal` | -      | `normal` |
+| **duration** | 持续时间(ms)，设置为 `0` 则永久展示 | `number`                              | -      | `4500`   |
+| **action**   | 按钮文案                            | `string`                              | -      | -        |
+| **handler**  | 按钮回调                            | `function`                            | -      | -        |
 
 </ex-footer>
 
 <ex-footer title="Methods">
 
-| 方法名       | 描述              | 类型                                           | 推荐值 | 默认 |
-| ------------ | ----------------- | ---------------------------------------------- | ------ | ---- |
-| **success**  | 成功              | `(message: string) => ComponentPublicInstance` | -      | -    |
-| **warning**  | 警告              | `(message: string) => ComponentPublicInstance` | -      | -    |
-| **danger**   | 失败              | `(message: string) => ComponentPublicInstance` | -      | -    |
-| **closeAll** | 移除所有 `GToast` | `() => void`                                   | -      | -    |
+| 方法名       | 描述              | 类型                                                                 | 推荐值 | 默认 |
+| ------------ | ----------------- | -------------------------------------------------------------------- | ------ | ---- |
+| **success**  | 成功              | `(message: string) => ComponentInternalInstance`                     | -      | -    |
+| **warning**  | 警告              | `(message: string) => ComponentInternalInstance`                     | -      | -    |
+| **danger**   | 失败              | `(message: string) => ComponentInternalInstance`                     | -      | -    |
+| **close**    | 关闭指定 `GToast` | `(instance: ComponentInternalInstance) => ComponentInternalInstance` | -      | -    |
+| **closeAll** | 移除所有 `GToast` | `() => void`                                                         | -      | -    |
 
 </ex-footer>

@@ -1,12 +1,10 @@
-import { setStringNumberProp, setFunctionProp, setStringProp } from '../../_utils'
+import { setFunctionProp, setStringProp } from '../../_utils'
 import type { ExtractPropTypes } from 'vue'
 import type { ButtonTypes } from '../../button/src/props'
 
 export type ToastTypes = Exclude<ButtonTypes, 'primary' | 'abort'>
 
 export const Props = {
-  /** 唯一标识 */
-  id: setStringNumberProp(),
   /** 提示语 */
   message: setStringProp(),
   /**

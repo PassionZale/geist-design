@@ -18,8 +18,8 @@
 <template>
   <div class="buttons">
     <g-button size="small" @click="show('success')" type="success">show success</g-button>
-    <g-button size="small" @click="show('warning')" type="warning">show warning</g-button>
     <g-button size="small" @click="show('danger')" type="danger">show danger</g-button>
+    <g-button size="small" @click="show('warning')" type="warning">show warning</g-button>
     <g-button size="small" @click="fn()">show function</g-button>
   </div>
 </template>

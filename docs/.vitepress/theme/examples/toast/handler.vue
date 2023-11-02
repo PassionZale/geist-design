@@ -5,7 +5,7 @@
 
   const show = (): void => {
     GToast({
-      type: 'danger',
+      type: 'success',
       action: 'again',
       message: 'click to try reconnect',
       handler: () => alert('ok')
@@ -13,9 +13,18 @@
   }
 
   const close = (): void => {
-    GToast({
-      type: 'success',
+    const instance = GToast({
+      type: 'danger',
       action: 'close',
+      message: 'click to close',
+      handler: () => GToast.close(instance)
+    })
+  }
+
+  const closeAll = (): void => {
+    GToast({
+      type: 'warning',
+      action: 'close all',
       message: 'click to close all',
       handler: () => GToast.closeAll()
     })
@@ -24,8 +33,9 @@
 
 <template>
   <div class="buttons">
-    <g-button size="small" @click="show()" type="danger">set network</g-button>
-    <g-button size="small" @click="close()" type="success">close all</g-button>
+    <g-button size="small" @click="show()" type="success">set network</g-button>
+    <g-button size="small" @click="close()" type="danger">close</g-button>
+    <g-button size="small" @click="closeAll()" type="warning">close all</g-button>
   </div>
 </template>
 

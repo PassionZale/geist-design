@@ -1,7 +1,7 @@
 import { h, render } from 'vue'
 import ToastConstructor from './toast.vue'
 
-import type { ComponentPublicInstance, ComponentInternalInstance, VNode } from 'vue'
+import type { ComponentInternalInstance, VNode } from 'vue'
 import type { ToastTypes } from './props'
 
 /** Toast props */
@@ -31,7 +31,7 @@ type ToastOptions = ToastProps | string
  * @example Toast('message')
  * @example Toast({ message: 'message', action: '按钮文案', duration: 4500 })
  */
-export type ToastBasicType = (options: ToastOptions) => ComponentPublicInstance
+export type ToastBasicType = (options: ToastOptions) => ComponentInternalInstance
 
 /** Toast 调用方式集合 */
 type ToastOptionalTypeKeys = Exclude<ToastTypes, 'normal'>
@@ -44,8 +44,10 @@ type ToastOptionalTypeKeys = Exclude<ToastTypes, 'normal'>
  * @example Toast.danger('message')
  */
 export type ToastOptionalType = {
-  [key in ToastOptionalTypeKeys]: (message: string) => ComponentPublicInstance
+  [key in ToastOptionalTypeKeys]: (message: string) => ComponentInternalInstance
 } & {
+  /** 销毁当前 Toast 实例 */
+  close: (instance: ComponentInternalInstance) => void
   /** 销毁所有 Toast 实例 */
   closeAll: () => void
 }
@@ -94,9 +96,6 @@ const mergeOptionsToProps = (options: ToastOptions): ToastProps => {
 }
 
 export const useToast = (): UseToastReturn => {
-  // eslint-disable-next-line prefer-const
-  let seed: number = 1
-
   /**
    * 销毁指定 Toast 或全部 Toast
    *
@@ -104,7 +103,7 @@ export const useToast = (): UseToastReturn => {
    * @param { boolean } all 是否移除全部 Toast
    * @returns
    */
-  const destroyToast = (id: number, all?: boolean): void => {
+  const destroyToast = (id?: number, all?: boolean): void => {
     const el = all ? createRootContainer() : document.querySelector(`#g-toast-${id}`)
 
     if (!el) return
@@ -125,10 +124,7 @@ export const useToast = (): UseToastReturn => {
    * @returns { Object } 组件实例
    */
   const createToastInstance = (props: ToastProps): ComponentInternalInstance => {
-    const vNode: VNode = h(ToastConstructor, {
-      id: seed++, // 添加 id
-      ...props
-    })
+    const vNode: VNode = h(ToastConstructor, props)
 
     // 获取根节点 div.g-toast-area
     const rootContainer = createRootContainer()
@@ -148,18 +144,21 @@ export const useToast = (): UseToastReturn => {
       clearTimeout(timer)
     }, 0)
 
-    // duration 默认 4500ms
-    let duration = 4500
+    // 若 duration 设置为 0，则永久展示
+    if (props.duration !== 0) {
+      // duration 默认 4500ms
+      let duration = 4500
 
-    if (props.duration && !Number.isNaN(+props.duration)) {
-      duration = props.duration
+      if (props.duration && !Number.isNaN(+props.duration)) {
+        duration = props.duration
+      }
+
+      // duration 结束后移除自身
+      const _timer = setTimeout(() => {
+        destroyToast(vNode.component?.uid)
+        clearTimeout(_timer)
+      }, duration)
     }
-
-    // duration 结束后移除自身
-    const _timer = setTimeout(() => {
-      destroyToast(seed)
-      clearTimeout(_timer)
-    }, duration)
 
     return vNode.component as ComponentInternalInstance
   }
@@ -170,19 +169,21 @@ export const useToast = (): UseToastReturn => {
    * @param options
    * @returns
    */
-  const createToast = (options: ToastOptions): ComponentPublicInstance => {
+  const createToast = (options: ToastOptions): ComponentInternalInstance => {
     const instance = createToastInstance(
       mergeOptionsToProps(options)
     ) as ComponentInternalInstance
 
-    return instance.proxy as ComponentPublicInstance
+    return instance as ComponentInternalInstance
   }
 
-  const Toast: ToastBasicType = (options: ToastOptions): ComponentPublicInstance => {
+  const Toast: ToastBasicType = (options: ToastOptions): ComponentInternalInstance => {
     return createToast(options)
   }
 
-  (Toast as unknown as ToastOptionalType).closeAll = (): void => destroyToast(0, true)
+  ;(Toast as unknown as ToastOptionalType).close = (instance): void =>
+    destroyToast(instance.uid)
+  ;(Toast as unknown as ToastOptionalType).closeAll = (): void => destroyToast(0, true)
 
   /** Toast 快捷方法 */
   const TOAST_OPTIONAL_TYPE_KEYS: ToastOptionalTypeKeys[] = [
@@ -199,7 +200,7 @@ export const useToast = (): UseToastReturn => {
   TOAST_OPTIONAL_TYPE_KEYS.forEach(method => {
     (Toast as unknown as ToastOptionalType)[method] = (
       message: string
-    ): ComponentPublicInstance => createToast({ message, type: method })
+    ): ComponentInternalInstance => createToast({ message, type: method })
   })
 
   return { Toast } as UseToastReturn
