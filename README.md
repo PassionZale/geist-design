@@ -87,6 +87,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [ ] Files / 文件
 - [ ] Grid / 栅格
 - [ ] Image / 图片
+- [x] Icons / 图标
 - [ ] Input / 输入框
 - [x] Keyboard / 键盘
 - [ ] Layout / 布局
@@ -106,7 +107,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [ ] Table / 表格
 - [ ] Tabs / 选项卡
 - [x] Tag / 标签
-- [ ] Textarea / 文本输入框
+- [x] Textarea / 文本输入框
 - [x] Toast / 通知
 - [ ] Toggle / 开关
 - [ ] Tooltip / 提示框
