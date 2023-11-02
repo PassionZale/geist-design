@@ -55,12 +55,14 @@ export const getGenerator = plop => {
         path: 'docs/components/{{kebabCase name}}.md',
         templateFile: 'scripts/plop-template/example/markdown.hbs'
       },
+
       // sfc
       {
         type: 'add',
         path: 'docs/.vitepress/theme/examples/{{kebabCase name}}/basic.vue',
         templateFile: 'scripts/plop-template/example/sfc.hbs'
       },
+      
       // sidebar
       async function modifySidebars(answers) {
         // sidebar.ts 文件路径
@@ -92,6 +94,14 @@ export const getGenerator = plop => {
 
         // 将 result 覆盖写入 sidebar.ts
         fs.writeFileSync(entryFilePath, validResult, 'utf-8')
+
+        // 获取相对路径作为 action 的返回语
+        const relativePath = path.relative(
+          path.resolve(__dirname, '../../'),
+          entryFilePath
+        )
+
+        return `${relativePath} modified`
       }
     ]
   }
