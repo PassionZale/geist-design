@@ -9,7 +9,7 @@ export const nav = [
   {
     text: '组件',
     activeMatch: '^/components/',
-    link: '/components/avatar'
+    link: '/components/button'
   },
   {
     text: `v${version}`,

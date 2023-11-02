@@ -7,5 +7,5 @@ export default function (
 ) {
   plop.setGenerator('component', component.getGenerator())
 
-  plop.setGenerator('example', example.getGenerator())
+  plop.setGenerator('example', example.getGenerator(plop))
 }

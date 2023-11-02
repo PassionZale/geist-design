@@ -8,12 +8,14 @@ p {
   margin: 0;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.VPSidebar::-webkit-scrollbar {
   width: 5px;
   background-color: var(--accents-1);
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.VPSidebar::-webkit-scrollbar-thumb {
   background-color: var(--accents-2);
   border-radius: 5px;
 }
