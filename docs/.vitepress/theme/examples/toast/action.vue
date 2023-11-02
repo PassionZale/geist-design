@@ -12,7 +12,7 @@
   }
 
   const toastHandler = () => {
-    GToast.danger('insert action cliced')
+    GToast.danger('insert action clicked')
   }
 </script>
 
