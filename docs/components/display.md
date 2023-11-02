@@ -1,4 +1,4 @@
-# Display / 陈列框
+# 陈列框 / Display
 
 <ex-code name="ex-display-basic">
 

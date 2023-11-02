@@ -1,4 +1,4 @@
-# Tag / 标签
+# 标签 / Tag
 
 <ex-code name="ex-tag-basic">
 

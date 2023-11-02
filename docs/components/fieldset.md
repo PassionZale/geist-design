@@ -1,4 +1,4 @@
-# Fieldset / 控件组
+# 控件组 / Fieldset
 
 <ex-code name="ex-fieldset-basic">
 

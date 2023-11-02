@@ -24,10 +24,10 @@ export const sidebar = {
         {
           text: '通用',
           items: [
-            { text: 'Button <small>按钮</small>', link: '/components/button' },
-            { text: 'Code <small>代码</small>', link: '/components/code' },
+            { text: '按钮 <small>Button</small>', link: '/components/button' },
+            { text: '代码 <small>Code</small>', link: '/components/code' },
             {
-              text: 'Icons <small>图标</small>',
+              text: '图标 <small>Icons</small>',
               link: '/components/icons'
             } /** PLOP_INJECT_SIDEBAR_GENERAL */
           ]
@@ -36,7 +36,7 @@ export const sidebar = {
           text: '布局',
           items: [
             {
-              text: 'Spacer <small>占位符</small>',
+              text: '占位符 <small>Spacer</small>',
               link: '/components/spacer'
             } /** PLOP_INJECT_SIDEBAR_LAYOUT */
           ]
@@ -44,9 +44,9 @@ export const sidebar = {
         {
           text: '容器',
           items: [
-            { text: 'Card <small>卡片</small>', link: '/components/card' },
+            { text: '卡片 <small>Card</small>', link: '/components/card' },
             {
-              text: 'Fieldset <small>控件组</small>',
+              text: '控件组 <small>Fieldset</small>',
               link: '/components/fieldset'
             } /** PLOP_INJECT_SIDEBAR_CONTAINER */
           ]
@@ -55,7 +55,7 @@ export const sidebar = {
           text: '表单',
           items: [
             {
-              text: 'Textarea <small>文本输入框</small>',
+              text: '文本输入框 <small>Textarea</small>',
               link: '/components/textarea'
             } /** PLOP_INJECT_SIDEBAR_FORM */
           ]
@@ -63,15 +63,15 @@ export const sidebar = {
         {
           text: '数据展示',
           items: [
-            { text: 'Avatar <small>头像</small>', link: '/components/avatar' },
-            { text: 'Badge <small>徽章</small>', link: '/components/badge' },
-            { text: 'Description <small>描述</small>', link: '/components/description' },
-            { text: 'Display <small>陈列框</small>', link: '/components/display' },
-            { text: 'Dot <small>点</small>', link: '/components/dot' },
-            { text: 'Keyboard <small>键盘</small>', link: '/components/keyboard' },
-            { text: 'Tag <small>标签</small>', link: '/components/tag' },
+            { text: '头像 <small>Avatar</small>', link: '/components/avatar' },
+            { text: '徽章 <small>Badge</small>', link: '/components/badge' },
+            { text: '描述 <small>Description</small>', link: '/components/description' },
+            { text: '陈列框 <small>Display</small>', link: '/components/display' },
+            { text: '点 <small>Dot</small>', link: '/components/dot' },
+            { text: '键盘 <small>Keyboard</small>', link: '/components/keyboard' },
+            { text: '标签 <small>Tag</small>', link: '/components/tag' },
             {
-              text: 'User <small>用户</small>',
+              text: '用户 <small>User</small>',
               link: '/components/user'
             } /** PLOP_INJECT_SIDEBAR_DATA_DISPLAY */
           ]
@@ -80,7 +80,7 @@ export const sidebar = {
           text: '反馈',
           items: [
             {
-              text: 'Toast <small>通知</small>',
+              text: '通知 <small>Toast</small>',
               link: '/components/toast'
             } /** PLOP_INJECT_SIDEBAR_FEEDBACK */
           ]
@@ -89,7 +89,7 @@ export const sidebar = {
           text: '导航',
           items: [
             {
-              text: 'Link <small>链接</small>',
+              text: '链接 <small>Link</small>',
               link: '/components/link'
             } /** PLOP_INJECT_SIDEBAR_NAVIGATION */
           ]
@@ -98,7 +98,7 @@ export const sidebar = {
           text: '其他',
           items: [
             {
-              text: 'Snippet <small>片段</small>',
+              text: '片段 <small>Snippet</small>',
               link: '/components/snippet'
             } /** PLOP_INJECT_SIDEBAR_OTHERS */
           ]
