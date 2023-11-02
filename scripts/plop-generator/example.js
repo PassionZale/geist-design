@@ -36,7 +36,7 @@ export const getGenerator = () => {
         type: 'modify',
         path: 'docs/.vitepress/config/sidebar.ts',
         pattern: ` /** PLOP_INJECT_SIDEBAR */`,
-        template: `,\n        { text: '{{pascalCase name}}', link: '/components/{{kebabCase name}}' } /** PLOP_INJECT_SIDEBAR */`
+        template: `,\n        { text: '{{pascalCase name}} {{title}}', link: '/components/{{kebabCase name}}' } /** PLOP_INJECT_SIDEBAR */`
       }
     ]
   }
