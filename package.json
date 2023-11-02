@@ -1,6 +1,6 @@
 {
   "name": "@whouu/geist-design",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "type": "module",
   "description": "A Geist Design UI framework for Vue3",
   "files": [
