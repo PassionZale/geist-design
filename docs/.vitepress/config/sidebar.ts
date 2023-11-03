@@ -77,6 +77,10 @@ export const sidebar = {
             {
               text: '用户 <small>User</small>',
               link: '/components/user'
+            },
+            {
+              text: '图片 <small>Image</small>',
+              link: '/components/image'
             } /** PLOP_INJECT_SIDEBAR_DATA_DISPLAY */
           ]
         },
