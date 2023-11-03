@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { shallowRef } from 'vue'
   import * as GeistIcons from '@whouu/geist-design-icons'
   import { GToast } from 'geist-design'
   import * as clipboard from '../../uitls/clipboard'
@@ -11,7 +12,8 @@
     data() {
       return {
         icons: Object.keys(GeistIcons),
-        keyword: ''
+        keyword: '',
+        searchIcon: shallowRef(GeistIcons.GIconSearch)
       }
     },
 
@@ -27,7 +29,7 @@
 
     methods: {
       copy(icon: string) {
-        clipboard.copy(`<${icon} />`)
+        clipboard.copy(`${icon}`)
 
         GToast.success('Code copied successfully!')
       }
@@ -37,15 +39,13 @@
 
 <template>
   <div class="wrapper">
-    <div class="search">
-      <!-- TODO 替换为 <g-input /> -->
-      <input
-        class="input"
-        type="text"
-        v-model="keyword"
-        :placeholder="`在 ${icons.length} 个图标中搜索...`"
-      />
-    </div>
+    <g-input
+      v-model="keyword"
+      class="input"
+      :prefix-icon="searchIcon"
+      :placeholder="`在 ${icons.length} 个图标中搜索...`"
+    >
+    </g-input>
 
     <div class="icons">
       <g-card
@@ -63,23 +63,19 @@
 </template>
 
 <style lang="scss" scoped>
-  .input {
-    padding: 10px;
-    outline: none;
-    width: 100%;
-    font-size: 1rem;
-    border: 1px solid #e2e2e2;
-    border-radius: 3px;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &:focus {
-      border-color: #ccc;
-    }
+  .input {
+    margin: 0 5px;
   }
 
   .icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .icon {
       display: flex;
