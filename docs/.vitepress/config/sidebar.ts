@@ -55,6 +55,10 @@ export const sidebar = {
           text: '表单',
           items: [
             {
+              text: '输入框 <small>Input</small>',
+              link: '/components/input'
+            },
+            {
               text: '文本输入框 <small>Textarea</small>',
               link: '/components/textarea'
             } /** PLOP_INJECT_SIDEBAR_FORM */
