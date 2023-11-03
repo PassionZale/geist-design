@@ -88,7 +88,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [ ] Grid / 栅格
 - [ ] Image / 图片
 - [x] Icons / 图标
-- [ ] Input / 输入框
+- [x] Input / 输入框
 - [x] Keyboard / 键盘
 - [ ] Layout / 布局
 - [x] Link / 链接
