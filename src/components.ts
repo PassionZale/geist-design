@@ -49,4 +49,7 @@ export * from './tag'
 export { GTextarea } from './textarea'
 export * from './textarea'
 
+export { GInput } from './input'
+export * from './input'
+
 /** PLOP_INJECT_EXPORT */

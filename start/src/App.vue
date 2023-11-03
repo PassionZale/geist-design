@@ -16,13 +16,19 @@
     GToast.closeAll()
   }
 
-  const textarea = ref('123')
+  const textareaValue = ref('textareaValue')
 
-  watchEffect(() => console.log(textarea.value))
+  watchEffect(() => console.log(textareaValue.value))
+
+  const inputValue = ref('inputValue')
+
+  watchEffect(() => console.log(inputValue.value))
 </script>
 
 <template>
-  <g-textarea v-model="textarea"></g-textarea>
+  <g-textarea v-model="textareaValue"></g-textarea>
+
+  <g-input v-model="inputValue"></g-input>
 
   <g-icon-airplay size="34" color="red" />
   <br />

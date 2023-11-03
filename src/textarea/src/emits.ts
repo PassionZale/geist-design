@@ -2,7 +2,7 @@ export interface TextareaEmits {
   /**
    * v-model
    *
-   * @event click
+   * @event update:modelValue
    * @param {string} event
    */
   (eventName: 'update:modelValue', event: string): void
