@@ -4,8 +4,6 @@
 
 <ex-code name="ex-button-basic">
 
-默认按钮会包含一个动画效果。
-
 </ex-code>
 
 <ex-code name="ex-button-type">

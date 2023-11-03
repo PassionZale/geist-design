@@ -11,6 +11,8 @@
     <g-avatar text="G" shape="square" />
   </g-badge>
 
+  <br />
+
   <p>
     你有&nbsp;
     <g-badge count="10+" status="error" dot>
