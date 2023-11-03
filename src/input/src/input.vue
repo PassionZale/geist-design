@@ -27,7 +27,7 @@
       return 'g-input-group'
     }
 
-    return 'g-input-empty'
+    return 'g-input-group-empty'
   })
 </script>
 
@@ -49,7 +49,7 @@
     <input
       v-model="value"
       class="g-input"
-      :class="[{ disabled: disabled }, size && size, type]"
+      :class="[{ disabled: disabled }, size && size, status]"
       :disabled="disabled"
       :type="type"
       v-bind="$attrs"
