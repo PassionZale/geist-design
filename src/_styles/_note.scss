@@ -1,0 +1,61 @@
+.g-note {
+	padding: rem(10.5) rem(20);
+	font-size: rem(14);
+	line-height: 1.8;
+	border: 1px solid var(--accents-2);
+	background-color: var(--geist-background);
+	border-radius: var(--geist-radius);
+	a {
+		margin-left: 4px;
+	}
+	& > .g-note-type {
+		text-transform: uppercase;
+		user-select: none;
+		line-height: 1.5;
+	}
+	&.filled {
+		background-color: var(--geist-foreground);
+		color: var(--geist-background);
+	}
+	&.success {
+		border-color: var(--geist-success);
+		color: var(--geist-success);
+		&.filled {
+			background-color: var(--geist-success);
+			color: #fff;
+		}
+	}
+	&.warning {
+		border-color: var(--geist-warning);
+		color: var(--geist-warning);
+		&.filled {
+			background-color: var(--geist-warning);
+			color: #fff;
+		}
+	}
+	&.error {
+		border-color: var(--geist-error);
+		color: var(--geist-error);
+		&.filled {
+			background-color: var(--geist-error);
+			color: #fff;
+		}
+	}
+	&.secondary {
+		border-color: var(--geist-secondary);
+		color: var(--geist-secondary);
+		&.filled {
+			background-color: var(--geist-secondary);
+			color: #fff;
+		}
+	}
+}
+.g-note h1,
+.g-note h2,
+.g-note h3,
+.g-note h4,
+.g-note h5,
+.g-note h6,
+.g-note p {
+	margin: 0;
+}

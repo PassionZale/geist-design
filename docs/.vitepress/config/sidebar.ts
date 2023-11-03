@@ -90,6 +90,10 @@ export const sidebar = {
             {
               text: '通知 <small>Toast</small>',
               link: '/components/toast'
+            },
+            {
+              text: '提示 <small>Note</small>',
+              link: '/components/note'
             } /** PLOP_INJECT_SIDEBAR_FEEDBACK */
           ]
         },

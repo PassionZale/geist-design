@@ -55,4 +55,7 @@ export * from './input'
 export { GImage } from './image'
 export * from './image'
 
+export { GNote } from './note'
+export * from './note'
+
 /** PLOP_INJECT_EXPORT */
