@@ -20,11 +20,4 @@
   <g-spacer />
 
   <g-note type="secondary" filled>secondary type note</g-note>
-
-  <g-spacer />
-
-  <g-note label="tip" type="error" filled>
-    This is an error note with label.
-    <a>A link to helpful information.</a>
-  </g-note>
 </template>
