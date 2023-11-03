@@ -52,4 +52,7 @@ export * from './textarea'
 export { GInput } from './input'
 export * from './input'
 
+export { GImage } from './image'
+export * from './image'
+
 /** PLOP_INJECT_EXPORT */
