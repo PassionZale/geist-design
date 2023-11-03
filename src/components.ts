@@ -58,4 +58,7 @@ export * from './image'
 export { GNote } from './note'
 export * from './note'
 
+export { GRate } from './rate'
+export * from './rate'
+
 /** PLOP_INJECT_EXPORT */

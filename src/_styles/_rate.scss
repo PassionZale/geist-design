@@ -1,0 +1,30 @@
+.g-rate {
+  height: rem(20);
+  line-height: 1;
+  
+  &.disabled {
+    .g-rate-icon {
+      cursor: default;
+    }
+  }
+}
+.g-rate-icon {
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+  cursor: pointer;
+  color: var(--accents-3);
+  margin-right: rem(4);
+  transition: all 0.12s ease-in;
+
+  &:not(.active):not(.disabled):hover {
+    color: var(--accents-5);
+  }
+  &:not(.active):not(.disabled).hover {
+    color: var(--accents-5);
+  }
+  &.active {
+    color: var(--geist-warning);
+    fill: var(--geist-warning);
+  }
+}

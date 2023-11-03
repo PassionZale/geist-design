@@ -94,6 +94,10 @@ export const sidebar = {
             {
               text: '提示 <small>Note</small>',
               link: '/components/note'
+            },
+            {
+              text: '评级 <small>Rate</small>',
+              link: '/components/rate'
             } /** PLOP_INJECT_SIDEBAR_FEEDBACK */
           ]
         },
