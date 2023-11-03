@@ -38,6 +38,10 @@ export const sidebar = {
             {
               text: '占位符 <small>Spacer</small>',
               link: '/components/spacer'
+            },
+            {
+              text: '栅格 <small>Grid</small>',
+              link: '/components/grid'
             } /** PLOP_INJECT_SIDEBAR_LAYOUT */
           ]
         },

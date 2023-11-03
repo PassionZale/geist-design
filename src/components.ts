@@ -61,4 +61,7 @@ export * from './note'
 export { GRate } from './rate'
 export * from './rate'
 
+export { GGrid } from './grid'
+export * from './grid'
+
 /** PLOP_INJECT_EXPORT */

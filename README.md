@@ -85,7 +85,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Dot / 点
 - [x] Fieldset / 控件组
 - [ ] Files / 文件
-- [ ] Grid / 栅格
+- [x] Grid / 栅格
 - [x] Image / 图片
 - [x] Icons / 图标
 - [x] Input / 输入框

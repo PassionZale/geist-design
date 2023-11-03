@@ -28,6 +28,7 @@ declare module '@vue/runtime-core' {
     GImage: typeof components.GImage
     GNote: typeof components.GNote
     GRate: typeof components.GRate
+    GGrid: typeof components.GGrid
     /** PLOP_INJECT_EXPORT */
   }
 }
