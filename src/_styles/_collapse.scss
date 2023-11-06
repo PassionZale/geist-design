@@ -11,6 +11,11 @@
 		padding: var(--geist-gap);
 	}
 }
+
+.g-collapse-header {
+	cursor: pointer;
+}
+
 .g-collapse-title {
 	width: 100%;
 	display: flex;
@@ -20,7 +25,6 @@
 	color: var(--geist-foreground);
 	text-transform: none;
 	margin: 0;
-	cursor: pointer;
 	line-height: 1.5;
 	& > h3 {
 		margin: 0;

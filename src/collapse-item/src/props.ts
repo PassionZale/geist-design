@@ -7,6 +7,10 @@ export const Props = {
     ...setStringProp(),
     required: true
   },
+  /** 标题 */
+  title: setStringProp(),
+  /** 副标题 */
+  subTitle: setStringProp(),
   /** 阴影 */
   shadow: setBooleanProp()
 } as const

@@ -21,11 +21,16 @@
 
     set(value: boolean) {
       if (parentInject) {
-        const changedValue = value
-          ? [...new Set(parentInject.modelValue.concat([props.name]))]
-          : parentInject.modelValue.filter(name => name !== props.name)
+        // 手风琴模式
+        if (parentInject.accordion) {
+          parentInject.setChange(value ? [props.name] : [])
+        } else {
+          const changedValue = value
+            ? [...new Set(parentInject.modelValue.concat([props.name]))]
+            : parentInject.modelValue.filter(name => name !== props.name)
 
-        parentInject.setChange(changedValue)
+          parentInject.setChange(changedValue)
+        }
       }
     }
   })
@@ -33,18 +38,19 @@
 
 <template>
   <div class="g-collapse" :class="{ shadow }">
-    <div>
-      <div class="g-collapse-title" @click="isActive = !isActive">
+    <div class="g-collapse-header" @click="isActive = !isActive">
+      <div class="g-collapse-title">
         <h3>
-          <slot name="title"></slot>
+          <slot name="title">{{ title }}</slot>
         </h3>
         <g-icon-chevron-down class="icon" :class="{ reverse: isActive }" />
       </div>
 
       <div class="g-collapse-subtitle">
-        <slot name="subTitle"></slot>
+        <slot name="subTitle">{{ subTitle }}</slot>
       </div>
     </div>
+
     <transition-expand>
       <div v-if="isActive" class="g-collapse-content">
         <div class="content">
