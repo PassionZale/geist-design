@@ -1,7 +1,6 @@
 <script setup lang="ts">
   import { reactive, onMounted } from 'vue'
-  import { GToast } from 'geist-design'
-  import * as clipboard from '../uitls/clipboard'
+  import { GToast, copy } from 'geist-design'
   import { data as examples } from '../data/examples.data'
 
   defineOptions({ name: 'ex-code' })
@@ -35,8 +34,8 @@
     )!.sfcRawData
   }
 
-  function copy() {
-    clipboard.copy(state.codeTemplate)
+  function copyCode() {
+    copy(state.codeTemplate)
 
     GToast.success('Code copied successfully!')
   }
@@ -63,7 +62,7 @@
               预览代码
             </span>
 
-            <ex-icon-copy class="copy" @click.stop.prevent="copy" />
+            <ex-icon-copy class="copy" @click.stop.prevent="copyCode" />
           </div>
         </summary>
 

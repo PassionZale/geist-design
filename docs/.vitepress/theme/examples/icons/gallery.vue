@@ -1,8 +1,7 @@
 <script lang="ts">
   import { shallowRef } from 'vue'
   import * as GeistIcons from '@whouu/geist-design-icons'
-  import { GToast } from 'geist-design'
-  import * as clipboard from '../../uitls/clipboard'
+  import { GToast, copy } from 'geist-design'
 
   export default {
     name: 'ex-icons-gallery',
@@ -28,8 +27,8 @@
     },
 
     methods: {
-      copy(icon: string) {
-        clipboard.copy(`${icon}`)
+      copyIcon(icon: string) {
+        copy(`${icon}`)
 
         GToast.success('Code copied successfully!')
       }
@@ -53,7 +52,7 @@
         v-for="icon in filterIcons"
         :key="icon"
         hoverable
-        @click="copy(icon)"
+        @click="copyIcon(icon)"
       >
         <component :is="icon" />
         <small>{{ icon.replace('GIcon', '') }}</small>
