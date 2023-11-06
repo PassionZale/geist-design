@@ -1,3 +1,5 @@
+export * from './bounding'
 export * from './install'
 export * from './is'
 export * from './props'
+export * from './transition'
