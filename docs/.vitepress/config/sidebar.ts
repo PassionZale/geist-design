@@ -106,6 +106,10 @@ export const sidebar = {
             {
               text: '评级 <small>Rate</small>',
               link: '/components/rate'
+            },
+            {
+              text: '指示器 <small>Spinner</small>',
+              link: '/components/spinner'
             } /** PLOP_INJECT_SIDEBAR_FEEDBACK */
           ]
         },
