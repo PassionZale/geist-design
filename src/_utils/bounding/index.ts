@@ -1,5 +1,13 @@
 import type { CSSProperties } from 'vue'
 
+/**
+ * 获取元素的宽度和高度
+ * 
+ * @param { Element } el 
+ * @returns 元素的宽高
+ * 
+ * @example const { width, height } = getRealShape(document.querySelector('#geist-design'))
+ */
 export const getRealShape = (el: Element): CSSProperties => {
   const rect = el.getBoundingClientRect()
 
@@ -23,6 +31,14 @@ export const getRealShape = (el: Element): CSSProperties => {
   }
 }
 
+/**
+ * 获取元素的 DOMRect
+ * 
+ * @param { Element } el 
+ * @returns {DOMRect} object
+ * 
+ * @example const rect = getRect(document.querySelector('#geist-design'))
+ */
 export const getRect = (el: Element): DOMRect => {
   return el.getBoundingClientRect()
 }

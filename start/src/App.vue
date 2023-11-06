@@ -23,9 +23,25 @@
   const inputValue = ref('inputValue')
 
   watchEffect(() => console.log(inputValue.value))
+
+  const collapseValue = ref([])
+
+  watchEffect(() => console.log(collapseValue.value))
 </script>
 
 <template>
+  <g-collapse v-model="collapseValue">
+    <g-collapse-item name="1">
+      <template #title>Question A</template>
+      <template #subTitle>A-1</template>
+      <p>
+        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </g-collapse-item>
+  </g-collapse>
+
   <g-textarea v-model="textareaValue"></g-textarea>
 
   <g-input v-model="inputValue"></g-input>

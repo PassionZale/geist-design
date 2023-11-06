@@ -29,6 +29,8 @@ declare module '@vue/runtime-core' {
     GNote: typeof components.GNote
     GRate: typeof components.GRate
     GGrid: typeof components.GGrid
+    GCollapse: typeof components.GCollapse
+    GCollapseItem: typeof components.GCollapseItem
     /** PLOP_INJECT_EXPORT */
   }
 }

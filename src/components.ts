@@ -64,4 +64,10 @@ export * from './rate'
 export { GGrid } from './grid'
 export * from './grid'
 
+export { GCollapse } from './collapse'
+export * from './collapse'
+
+export { GCollapseItem } from './collapse-item'
+export * from './collapse-item'
+
 /** PLOP_INJECT_EXPORT */

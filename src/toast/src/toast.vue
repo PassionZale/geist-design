@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { getCurrentInstance } from 'vue'
   import { Props } from './props'
-  import { GButton } from '../..'
+  import { GButton } from '../../button'
 
   import type { ComponentInternalInstance } from 'vue'
 

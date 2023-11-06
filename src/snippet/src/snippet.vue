@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { computed } from 'vue'
   import { GIconCopy } from '@whouu/geist-design-icons'
-  import { GToast } from '../..'
+  import { GToast } from '../../toast'
   import { Props } from './props'
 
   defineOptions({ name: 'GSnippet' })

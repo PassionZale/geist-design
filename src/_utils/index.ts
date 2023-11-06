@@ -1,4 +1,5 @@
 export * from './bounding'
+export * from './clipboard'
 export * from './install'
 export * from './is'
 export * from './props'

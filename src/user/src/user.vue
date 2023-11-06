@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { GAvatar } from '../..';
+  import { GAvatar } from '../../avatar';
   import { Props } from './props'
 
   defineOptions({ name: 'GUser' })

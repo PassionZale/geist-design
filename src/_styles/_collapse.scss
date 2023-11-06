@@ -1,0 +1,54 @@
+.g-collapse {
+	text-align: left;
+	border-bottom: 1px solid var(--accents-2);
+	padding: var(--geist-gap) 0;
+	&:first-child {
+		border-top: 1px solid var(--accents-2);
+	}
+	&.shadow {
+		box-shadow: var(--shadow-small);
+		border-color: transparent;
+		padding: var(--geist-gap);
+	}
+}
+.g-collapse-title {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: rem(20);
+	color: var(--geist-foreground);
+	text-transform: none;
+	margin: 0;
+	cursor: pointer;
+	line-height: 1.5;
+	& > h3 {
+		margin: 0;
+	}
+	& > .icon {
+		width: rem(16);
+		height: rem(16);
+		font-weight: lighter;
+		transition: all 0.15s ease-out;
+		&.reverse {
+			transform: rotateZ(180deg);
+		}
+	}
+}
+.g-collapse-subtitle {
+	color: var(--accents-5);
+	line-height: 1.5;
+}
+.g-collapse-content {
+	width: 100%;
+	transition: height 0.2s ease;
+	.content {
+		padding: var(--geist-gap) 0;
+		& > *:first-child {
+			margin-top: 0;
+		}
+		& > *:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

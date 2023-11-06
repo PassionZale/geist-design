@@ -88,7 +88,7 @@ export const setStringNumberProp = <T extends string | number>(
 
 /**
  * 设置 boolean & number 类型 props 参数
- * 
+ *
  * @param { boolean | number } [defaultValue = undefined] 默认值
  * @returns { Object } 配置对象
  */
@@ -175,3 +175,21 @@ export const setStringArrayProp = <T = string>(
     default: (): T | undefined => defaultValue
   } as const
 }
+
+/**
+ * 设置 string & number & array 类型的 props 参数
+ *
+ * @param {string | number | array} [defaultValue = undefined]
+ * @returns { Object } 配置对象
+ */
+// export const setStringNumberArrayProp = <T>(
+//   defaultValue?: T[]
+// ): {
+//   readonly type: PropType<T[] | String | Number>
+//   readonly default: () => T[] | undefined
+// } => {
+//   return {
+//     type: [Array, String, Number] as unknown as PropType<T[] | String | Number>,
+//     default: (): T | undefined => defaultValue
+//   } as const
+// }
