@@ -52,6 +52,10 @@ export const sidebar = {
             {
               text: '控件组 <small>Fieldset</small>',
               link: '/components/fieldset'
+            },
+            {
+              text: '折叠框 <small>Collapse</small>',
+              link: '/components/collapse'
             } /** PLOP_INJECT_SIDEBAR_CONTAINER */
           ]
         },
