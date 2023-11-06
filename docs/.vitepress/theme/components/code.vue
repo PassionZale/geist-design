@@ -28,7 +28,7 @@
     // [前缀，组件名称, ...其他]
     const [_, __, ...rest] = arrs
 
-    state.codeName = rest.join('  ')
+    state.codeName = rest.join(' ')
 
     state.codeTemplate = examples.find(
       ({ sfcName }) => props.name === sfcName
