@@ -73,4 +73,7 @@ export * from './collapse-item'
 export { GSpinner } from './spinner'
 export * from './spinner'
 
+export { GProgress } from './progress'
+export * from './progress'
+
 /** PLOP_INJECT_EXPORT */

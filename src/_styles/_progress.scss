@@ -1,0 +1,54 @@
+.g-progress-bar {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	height: rem(10);
+	user-select: none;
+	&.top {
+		top: 0;
+	}
+	&.bottom {
+		bottom: 0;
+	}
+}
+.g-progress-bar.top,
+.g-progress-bar.bottom {
+	position: fixed;
+	height: rem(3);
+	width: 100vw;
+	left: 0;
+	z-index: 9999;
+	overflow: hidden;
+}
+.g-progress-bar.top .g-progress,
+.g-progress-bar.bottom .g-progress {
+	width: 100%;
+}
+.g-progress {
+	width: 100%;
+	height: 100%;
+	background-color: var(--accents-2);
+	border-radius: rem(4);
+}
+.g-progress__inner {
+	width: 0;
+	height: 100%;
+	border-radius: var(--geist-radius);
+	transition: width 0.6s ease, background-color 1s ease;
+	&.default {
+		background-color: var(--geist-foreground);
+	}
+	&.success {
+		background-color: var(--geist-success);
+	}
+	&.warning {
+		background-color: var(--geist-warning);
+	}
+	&.danger {
+		background-color: var(--geist-error);
+	}
+	&.secondary {
+		background-color: var(--geist-secondary);
+	}
+}
