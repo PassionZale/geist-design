@@ -61,9 +61,9 @@
     const breakpointsClasses = BREAKPOINTS.map(item => {
       return props[item] === 0 ? `${item}-hidden` : props[item] && `${item}`
     })
-    if (!props.container) return ['grid', ...breakpointsClasses]
+    if (!props.container) return ['g-grid', ...breakpointsClasses]
 
-    return ['grid-container', ...breakpointsClasses]
+    return ['g-grid-container', ...breakpointsClasses]
   })
 
   const styles = computed<CSSProperties>(() => {
@@ -82,84 +82,3 @@
     <slot></slot>
   </div>
 </template>
-
-<style lang="scss" scoped>
-  .grid-container {
-    display: flex;
-    box-sizing: border-box;
-  }
-
-  .grid {
-    padding: var(--geist-grid-spacing);
-  }
-
-  .xs {
-    flex-grow: var(--geist-xs-grow);
-    flex-basis: var(--geist-xs-basis);
-    width: var(--geist-xs-width);
-  }
-
-  .xs-hidden {
-    display: none;
-  }
-
-  @media only screen and (max-width: 650px) {
-    .xs {
-      flex-grow: var(--geist-xs-grow);
-      flex-basis: var(--geist-xs-basis);
-      width: var(--geist-xs-width);
-    }
-
-    .xs-hidden {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 650px) {
-    .sm {
-      flex-grow: var(--geist-sm-grow);
-      flex-basis: var(--geist-sm-basis);
-      width: var(--geist-sm-width);
-    }
-
-    .sm-hidden {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 900px) {
-    .md {
-      flex-grow: var(--geist-md-grow);
-      flex-basis: var(--geist-md-basis);
-      width: var(--geist-md-width);
-    }
-
-    .md-hidden {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .lg {
-      flex-grow: var(--geist-lg-grow);
-      flex-basis: var(--geist-lg-basis);
-      width: var(--geist-lg-width);
-    }
-
-    .lg-hidden {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 1920px) {
-    .xl {
-      flex-grow: var(--geist-xl-grow);
-      flex-basis: var(--geist-xl-basis);
-      width: var(--geist-xl-width);
-    }
-
-    .xl-hidden {
-      display: none;
-    }
-  }
-</style>

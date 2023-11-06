@@ -1,0 +1,12 @@
+.g-transition-expand {
+  &-enter-active,
+  &-leave-active {
+    transition: height 0.2s ease;
+    overflow: hidden;
+  }
+
+  &-enter,
+  &-leave-to {
+    height: 0;
+  }
+}

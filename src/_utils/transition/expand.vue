@@ -61,7 +61,7 @@
 
 <template>
   <transition
-    name="expand"
+    name="g-transition-expand"
     @enter="onEnter"
     @after-enter="onAfterEnter"
     @leave="onLeave"
@@ -70,16 +70,3 @@
     <slot />
   </transition>
 </template>
-
-<style lang="scss" scoped>
-  .expand-enter-active,
-  .expand-leave-active {
-    transition: height 0.2s ease;
-    overflow: hidden;
-  }
-
-  .expand-enter,
-  .expand-leave-to {
-    height: 0;
-  }
-</style>
