@@ -128,13 +128,13 @@
   }
 
   @media only screen and (max-width: 900px) {
-    .sm {
+    .md {
       flex-grow: var(--geist-md-grow);
       flex-basis: var(--geist-md-basis);
       width: var(--geist-md-width);
     }
 
-    .sm-hidden {
+    .md-hidden {
       display: none;
     }
   }
