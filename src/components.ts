@@ -70,4 +70,7 @@ export * from './collapse'
 export { GCollapseItem } from './collapse-item'
 export * from './collapse-item'
 
+export { GSpinner } from './spinner'
+export * from './spinner'
+
 /** PLOP_INJECT_EXPORT */

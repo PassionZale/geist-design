@@ -31,6 +31,7 @@ declare module '@vue/runtime-core' {
     GGrid: typeof components.GGrid
     GCollapse: typeof components.GCollapse
     GCollapseItem: typeof components.GCollapseItem
+    GSpinner: typeof components.GSpinner
     /** PLOP_INJECT_EXPORT */
   }
 }
