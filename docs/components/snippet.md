@@ -18,7 +18,7 @@
 
 </ex-code>
 
-<ex-code name="ex-snippet-withoutCopy">
+<ex-code name="ex-snippet-without-copy">
 
 隐藏复制按钮。
 

@@ -26,7 +26,7 @@
 
 </ex-code>
 
-<ex-code name="ex-grid-autoWidth">
+<ex-code name="ex-grid-auto-width">
 
 自动分配剩余宽度。
 

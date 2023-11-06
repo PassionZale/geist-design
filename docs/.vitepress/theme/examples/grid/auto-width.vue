@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  defineOptions({ name: 'ex-grid-autoWidth' })
+  defineOptions({ name: 'ex-grid-auto-width' })
 </script>
 
 <template>
