@@ -110,6 +110,10 @@ export const sidebar = {
             {
               text: '指示器 <small>Spinner</small>',
               link: '/components/spinner'
+            },
+            {
+              text: '进度条 <small>Progress</small>',
+              link: '/components/progress'
             } /** PLOP_INJECT_SIDEBAR_FEEDBACK */
           ]
         },
