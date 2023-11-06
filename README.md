@@ -78,7 +78,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Card / 卡片
 - [ ] Checkbox / 多选框
 - [x] Code / 代码
-- [ ] Collapse / 折叠框
+- [x] Collapse / 折叠框
 - [x] Description / 描述
 - [ ] Dialog / 对话框
 - [x] Display / 陈列框
