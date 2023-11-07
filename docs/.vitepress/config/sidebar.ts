@@ -93,6 +93,10 @@ export const sidebar = {
             {
               text: '图片 <small>Image</small>',
               link: '/components/image'
+            },
+            {
+              text: '文件 <small>Files</small>',
+              link: '/components/files'
             } /** PLOP_INJECT_SIDEBAR_DATA_DISPLAY */
           ]
         },
