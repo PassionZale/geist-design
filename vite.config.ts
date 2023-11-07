@@ -6,7 +6,9 @@ import { resolve } from 'node:path'
 export default defineConfig({
   plugins: [
     vue(),
-    dts()
+    dts({
+      exclude: ['**/__test__/*.{test,spec}.{ts,tsx}']
+    })
   ],
   build: {
     lib: {
