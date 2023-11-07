@@ -118,6 +118,10 @@ export const sidebar = {
             {
               text: '更多 <small>More</small>',
               link: '/components/more'
+            },
+            {
+              text: '对话框 <small>Dialog</small>',
+              link: '/components/dialog'
             } /** PLOP_INJECT_SIDEBAR_FEEDBACK */
           ]
         },

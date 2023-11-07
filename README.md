@@ -80,7 +80,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Code / 代码
 - [x] Collapse / 折叠框
 - [x] Description / 描述
-- [ ] Dialog / 对话框
+- [x] Dialog / 对话框
 - [x] Display / 陈列框
 - [x] Dot / 点
 - [x] Fieldset / 控件组

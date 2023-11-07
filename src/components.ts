@@ -79,4 +79,7 @@ export * from './progress'
 export { GMore } from './more'
 export * from './more'
 
+export { GDialog } from './dialog'
+export * from './dialog'
+
 /** PLOP_INJECT_EXPORT */

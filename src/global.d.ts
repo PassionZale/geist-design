@@ -34,6 +34,7 @@ declare module '@vue/runtime-core' {
     GSpinner: typeof components.GSpinner
     GProgress: typeof components.GProgress
     GMore: typeof components.GMore
+    GDialog: typeof components.GDialog
     /** PLOP_INJECT_EXPORT */
   }
 }
