@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <g-more text="show more" text-up="show less"/>
+  <g-more text="show more" text-up="show less" />
 </template>
