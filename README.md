@@ -105,7 +105,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Spinner / 指示器
 - [ ] Switcher / 切换按钮
 - [ ] Table / 表格
-- [ ] Tabs / 选项卡
+- [x] Tabs / 选项卡
 - [x] Tag / 标签
 - [x] Textarea / 文本输入框
 - [x] Toast / 通知

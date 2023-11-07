@@ -88,4 +88,10 @@ export * from './col'
 export { GRow } from './row'
 export * from './row'
 
+export { GTabs } from './tabs'
+export * from './tabs'
+
+export { GTabsItem } from './tabs-item'
+export * from './tabs-item'
+
 /** PLOP_INJECT_EXPORT */

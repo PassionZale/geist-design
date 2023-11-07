@@ -1,11 +1,14 @@
 import { isMac } from '../validator'
 
-const elInfoStack = new Map()
+const elInfoStack = new Map<
+  HTMLElement,
+  { counter: number; initialOverflow: string; initialRight: string }
+>()
 
 /**
  * 锁定滚动条
- * 
- * @param {boolean} isLock 
+ *
+ * @param {boolean} isLock
  * @returns void
  */
 export const lockScroll = (isLock: boolean): void => {
