@@ -22,16 +22,16 @@
 
 </ex-code>
 
-<ex-footer title="Collapse Attributes">
+<ex-footer>
+
+<h3>Collapse</h3>
 
 | 属性                      | 描述       | 类型       | 推荐值 | 默认    |
 | ------------------------- | ---------- | ---------- | ------ | ------- |
 | **model-value / v-model** | 绑定值     | `string[]` | -      | -       |
 | **accordion**             | 手风琴模式 | `boolean`  | -      | `false` |
 
-</ex-footer>
-
-<ex-footer title="Collapse Item Attributes">
+<h3>Collapse Item</h3>
 
 | 属性         | 描述           | 类型      | 推荐值 | 默认 |
 | ------------ | -------------- | --------- | ------ | ---- |
@@ -40,9 +40,7 @@
 | **shadow**   | 阴影效果       | `boolean` | -      | -    |
 | **subTitle** | 标题详情       | `string`  | -      | -    |
 
-</ex-footer>
-
-<ex-footer title="Collapse Item Slots">
+<h3>Collapse Item Slots</h3>
 
 | 属性         | 描述           | 类型 | 推荐值 | 默认 |
 | ------------ | -------------- | ---- | ------ | ---- |
