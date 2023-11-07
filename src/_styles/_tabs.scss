@@ -2,7 +2,7 @@
   border-bottom: 1px solid var(--accents-2);
   display: flex;
 }
-.g-item-wrapper {
+.g-tabs-item-wrapper {
   padding: 0 var(--geist-gap-half);
   cursor: pointer;
   &:first-child {
@@ -23,10 +23,17 @@
   color: var(--accents-5);
   margin-bottom: -1px;
   user-select: none;
-  .icon {
+
+  &-prefix-icon {
     width: rem(14);
     height: rem(14);
     margin-right: rem(3);
+  }
+
+  &-suffix-icon {
+    width: rem(14);
+    height: rem(14);
+    margin-left: rem(3);
   }
   &.active {
     color: var(--geist-foreground);

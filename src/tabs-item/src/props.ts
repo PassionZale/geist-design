@@ -1,5 +1,12 @@
 import type { ExtractPropTypes } from 'vue'
-import { setStringProp, setStringNumberProp, setBooleanProp } from '../../_utils'
+import {
+  setStringProp,
+  setStringNumberProp,
+  setBooleanProp,
+  setObjectProp
+} from '../../_utils'
+
+import type { GeistIcon } from '../../_utils'
 
 export const Props = {
   /** 选项卡标题 */
@@ -13,7 +20,11 @@ export const Props = {
     required: true
   },
   /** 是否禁用 */
-  disabled: setBooleanProp()
+  disabled: setBooleanProp(),
+  /** 前缀图标 */
+  prefixIcon: setObjectProp<GeistIcon>(),
+  /** 后缀图标 */
+  suffixIcon: setObjectProp<GeistIcon>()
 } as const
 
 export type TabsItemProps = ExtractPropTypes<typeof Props>

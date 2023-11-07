@@ -46,12 +46,24 @@
     <div
       v-for="item in items"
       :key="item.name"
-      class="g-item-wrapper"
+      class="g-tabs-item-wrapper"
       :class="{ disabled: item.disabled }"
       @click="selectTabsItem(item)"
     >
       <div class="g-tabs-item" :class="{ active: activeName === item.name }">
+        <component
+          :is="item.prefixIcon"
+          v-if="item.prefixIcon"
+          class="g-tabs-item-prefix-icon"
+        />
+
         <div>{{ item.label }}</div>
+        
+        <component
+          :is="item.suffixIcon"
+          v-if="item.suffixIcon"
+          class="g-tabs-item-suffix-icon"
+        />
       </div>
     </div>
   </div>
