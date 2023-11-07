@@ -42,6 +42,10 @@ export const sidebar = {
             {
               text: '栅格 <small>Grid</small>',
               link: '/components/grid'
+            },
+            {
+              text: '布局 <small>Layout</small>',
+              link: '/components/layout'
             } /** PLOP_INJECT_SIDEBAR_LAYOUT */
           ]
         },

@@ -38,7 +38,7 @@
   const classes = computed(() => {
     let _class = ''
 
-    _class += ` zi-col-${span.value}`
+    _class += ` g-col-${span.value}`
 
     return _class
   })
