@@ -82,4 +82,10 @@ export * from './more'
 export { GDialog } from './dialog'
 export * from './dialog'
 
+export { GCol } from './col'
+export * from './col'
+
+export { GRow } from './row'
+export * from './row'
+
 /** PLOP_INJECT_EXPORT */

@@ -2,7 +2,7 @@
   import { computed, inject } from 'vue'
   import { GIconChevronDown } from '@whouu/geist-design-icons'
   import { Props } from './props'
-  import { COLLAPSE_PROPS_KEY } from '../../collapse/src/props'
+  import { COLLAPSE_INJECT_KEY } from '../../collapse/src/props'
   import { TransitionExpand } from '../../_utils'
 
   import type { CollapseProvide } from '../../collapse'
@@ -12,7 +12,7 @@
   const props = defineProps(Props)
 
   /** 获取父组件注入的依赖项 */
-  const parentInject: CollapseProvide | null = inject(COLLAPSE_PROPS_KEY, null)
+  const parentInject: CollapseProvide | null = inject(COLLAPSE_INJECT_KEY, null)
 
   const isActive = computed({
     get(): boolean {

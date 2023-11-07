@@ -1,0 +1,25 @@
+.g-row {
+	display: flex;
+	position: relative;
+	box-sizing: border-box;
+
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-end {
+    justify-content: flex-end;
+  }
+  &.justify-space-around {
+    justify-content: space-around;
+  }
+  &.justify-space-between {
+    justify-content: space-between;
+  }
+  &.align-middle {
+    align-items: center;
+  }
+  &.align-bottom {
+    align-items: flex-end;
+  }
+}
+

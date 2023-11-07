@@ -35,6 +35,8 @@ declare module '@vue/runtime-core' {
     GProgress: typeof components.GProgress
     GMore: typeof components.GMore
     GDialog: typeof components.GDialog
+    GCol: typeof components.GCol
+    GRow: typeof components.GRow
     /** PLOP_INJECT_EXPORT */
   }
 }

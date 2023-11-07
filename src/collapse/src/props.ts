@@ -16,5 +16,4 @@ export const Props = {
 export type CollapseProps = ExtractPropTypes<typeof Props>
 
 /** collapse 组件注入的依赖项 */
-export const COLLAPSE_PROPS_KEY: InjectionKey<CollapseProvide> =
-  Symbol('g-collapse-props-key')
+export const COLLAPSE_INJECT_KEY: InjectionKey<CollapseProvide> = Symbol()

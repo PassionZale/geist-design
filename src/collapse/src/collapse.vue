@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { provide, reactive, toRefs, computed } from 'vue'
-  import { Props, COLLAPSE_PROPS_KEY } from './props'
+  import { Props, COLLAPSE_INJECT_KEY } from './props'
   import type { CollapseEmits } from './emits'
   import type { CollapseProvide } from './interface'
 
@@ -25,7 +25,7 @@
 
   /** 获取需要注入的依赖项 */
   provide<CollapseProvide>(
-    COLLAPSE_PROPS_KEY,
+    COLLAPSE_INJECT_KEY,
     reactive({
       ...toRefs(props),
       setChange
