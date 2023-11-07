@@ -135,6 +135,10 @@ export const sidebar = {
             {
               text: '链接 <small>Link</small>',
               link: '/components/link'
+            },
+            {
+              text: '选项卡 <small>Tabs</small>',
+              link: '/components/tabs'
             } /** PLOP_INJECT_SIDEBAR_NAVIGATION */
           ]
         },
