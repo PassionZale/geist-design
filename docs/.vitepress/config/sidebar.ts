@@ -114,6 +114,10 @@ export const sidebar = {
             {
               text: '进度条 <small>Progress</small>',
               link: '/components/progress'
+            },
+            {
+              text: '更多 <small>More</small>',
+              link: '/components/more'
             } /** PLOP_INJECT_SIDEBAR_FEEDBACK */
           ]
         },

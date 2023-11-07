@@ -92,7 +92,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Keyboard / 键盘
 - [ ] Layout / 布局
 - [x] Link / 链接
-- [ ] More / 更多
+- [x] More / 更多
 - [x] Note / 提示
 - [ ] Popover / 下拉菜单
 - [x] Progress / 进度条

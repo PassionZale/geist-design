@@ -76,4 +76,7 @@ export * from './spinner'
 export { GProgress } from './progress'
 export * from './progress'
 
+export { GMore } from './more'
+export * from './more'
+
 /** PLOP_INJECT_EXPORT */

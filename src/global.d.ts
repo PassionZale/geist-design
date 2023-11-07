@@ -33,6 +33,7 @@ declare module '@vue/runtime-core' {
     GCollapseItem: typeof components.GCollapseItem
     GSpinner: typeof components.GSpinner
     GProgress: typeof components.GProgress
+    GMore: typeof components.GMore
     /** PLOP_INJECT_EXPORT */
   }
 }
