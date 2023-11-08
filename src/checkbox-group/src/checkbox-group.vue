@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { inject, toRefs, computed, reactive } from 'vue'
+  import { provide, toRefs, computed, reactive } from 'vue'
   import { Props, CHECKBOX_GROUP_INJECT_KEY } from './props'
 
   import type { CheckboxGroupModelValue } from './props'
@@ -26,7 +26,7 @@
     privateValue.value = changedValue
   }
 
-  inject<CheckboxGroupProvide>(
+  provide<CheckboxGroupProvide>(
     CHECKBOX_GROUP_INJECT_KEY,
     reactive({
       ...toRefs(props),

@@ -81,6 +81,10 @@ export const sidebar = {
             {
               text: '开关 <small>Toggle</small>',
               link: '/components/toggle'
+            },
+            {
+              text: '多选框 <small>Checkbox</small>',
+              link: '/components/checkbox'
             } /** PLOP_INJECT_SIDEBAR_FORM */
           ]
         },

@@ -4,6 +4,7 @@
 	height: rem(12);
 	width: rem(12);
 	user-select: none;
+	
 	&.disabled {
 		cursor: not-allowed;
 		opacity: 0.4;
