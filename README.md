@@ -99,7 +99,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [ ] Radio / 单选框
 - [x] Rate / 评级
 - [ ] Select / 选择器
-- [ ] Slider / 滑块
+- [x] Slider / 滑块
 - [x] Snippet / 片段
 - [x] Spacer / 占位符
 - [x] Spinner / 指示器
