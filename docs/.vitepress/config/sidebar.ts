@@ -89,6 +89,10 @@ export const sidebar = {
             {
               text: '单选框 <small>Radio</small>',
               link: '/components/radio'
+            },
+            {
+              text: '下拉框 <small>Select</small>',
+              link: '/components/select'
             } /** PLOP_INJECT_SIDEBAR_FORM */
           ]
         },

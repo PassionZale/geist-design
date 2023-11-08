@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { computed, provide, toRefs, reactive } from 'vue'
-  import { GIconArrowDown } from '@whouu/geist-design-icons'
+  import { GIconChevronDown } from '@whouu/geist-design-icons'
   import { Props, SELECT_INJECT_KEY } from './props'
 
   import type { SelectEmits } from './emits'
@@ -28,15 +28,16 @@
   <div class="g-select-container" :class="[{ disabled, simple }, size && size]">
     <select
       v-model="privateValue"
-      class="zi-select"
+      class="g-select"
       :class="{ disabled }"
       :disabled="disabled"
+      v-bind="$attrs"
     >
       <slot></slot>
     </select>
 
     <div v-if="!simple" class="g-select-arrow-box">
-      <g-icon-arrow-down class="g-select-arrow" />
+      <g-icon-chevron-down class="g-select-arrow" />
     </div>
   </div>
 </template>

@@ -12,7 +12,7 @@
   const parentInject: SelectProvide | null = inject(SELECT_INJECT_KEY, null)
 
   const isDisabled = computed(() => {
-    if (parentInject) return parentInject.disabled
+    if (parentInject) return parentInject.disabled || props.disabled
 
     return props.disabled
   })
@@ -20,6 +20,6 @@
 
 <template>
   <option :value="value" :disabled="isDisabled">
-    {{ label || value }}
+    <slot>{{ label || value }}</slot>
   </option>
 </template>
