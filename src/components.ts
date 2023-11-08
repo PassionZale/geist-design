@@ -112,4 +112,10 @@ export * from './radio'
 export { GRadioGroup } from './radio-group'
 export * from './radio-group'
 
+export { GSelect } from './select'
+export * from './select'
+
+export { GOption } from './select-option'
+export * from './select-option'
+
 /** PLOP_INJECT_EXPORT */

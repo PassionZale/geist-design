@@ -45,6 +45,8 @@ declare module '@vue/runtime-core' {
     GCheckboxGroup: typeof components.GCheckboxGroup
     GRadio: typeof components.GRadio
     GRadioGroup: typeof components.GRadioGroup
+    GSelect: typeof components.GSelect
+    GOption: typeof components.GOption
     /** PLOP_INJECT_EXPORT */
   }
 }

@@ -1,0 +1,154 @@
+.g-select {
+  color: var(--geist-foreground);
+  border: 1px solid var(--accents-2);
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  height: rem(40);
+  line-height: rem(40);
+  font-size: rem(14);
+  margin-right: rem(-20);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: initial;
+  padding: 0 rem(36) 0 rem(16);
+  text-transform: none;
+  transition:
+    border 0.2s,
+    background 0.2s,
+    color 0.2s ease-out,
+    box-shadow 0.2s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+.g-select:not(.disabled):hover,
+.g-select:not(.disabled):focus-within {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-color: var(--accents-3);
+}
+.g-select-container {
+  display: inline-flex;
+  border: 1px solid var(--accents-2);
+  border-radius: 5px;
+  height: rem(40);
+  line-height: rem(40);
+  outline: none;
+  font-size: rem(12);
+  user-select: none;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #000;
+  background-color: var(--geist-background);
+  white-space: nowrap;
+  width: auto;
+  min-width: rem(160);
+  overflow: hidden;
+  position: relative;
+  transition:
+    border 0.2s,
+    background 0.2s,
+    color 0.2s ease-out,
+    box-shadow 0.2s ease;
+  select {
+    border: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &.simple {
+    width: initial;
+    min-width: unset;
+  }
+  .g-select-arrow-box {
+    width: rem(40);
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--accents-2);
+    pointer-events: none;
+    background-color: var(--geist-background);
+    transition:
+      border 0.2s,
+      background 0.2s,
+      color 0.2s ease-out,
+      box-shadow 0.2s ease;
+    position: absolute;
+    right: 0;
+  }
+  .g-select-arrow {
+    display: inline-flex;
+    width: rem(12);
+    height: rem(12);
+  }
+}
+.g-select-container:not(.disabled):hover,
+.g-select-container:not(.disabled):focus-within {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-color: var(--accents-7);
+}
+.g-select-container:not(.disabled):hover .arrow-box,
+.g-select-container:not(.disabled):focus-within .arrow-box {
+  border-color: var(--accents-7);
+}
+.g-select-container.disabled,
+.g-select.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.g-select-container.disabled select,
+.g-select.disabled select {
+  cursor: not-allowed;
+}
+.g-select-container.mini,
+.g-select.mini {
+  height: rem(24);
+  line-height: rem(24);
+  font-size: rem(12);
+  min-width: rem(120);
+}
+.g-select-container.mini select,
+.g-select.mini select {
+  height: rem(24);
+  line-height: rem(24);
+  font-size: rem(12);
+}
+.g-select-container.mini .arrow-box,
+.g-select.mini .arrow-box {
+  width: rem(30);
+  border: none;
+}
+.g-select-container.mini .arrow,
+.g-select.mini .arrow {
+  border: none;
+  width: rem(10);
+  height: rem(10);
+}
+.g-select-container.small,
+.g-select.small {
+  height: rem(32);
+  line-height: rem(32);
+  font-size: rem(12);
+  min-width: rem(150);
+}
+.g-select-container.small select,
+.g-select.small select {
+  height: rem(32);
+  line-height: rem(32);
+  font-size: rem(12);
+}
+.g-select-container.small .arrow-box,
+.g-select.small .arrow-box {
+  width: rem(34);
+  border: none;
+}
+.g-select-container.small .arrow,
+.g-select.small .arrow {
+  width: rem(10);
+  height: rem(10);
+}

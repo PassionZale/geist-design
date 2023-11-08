@@ -95,14 +95,13 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Note / 提示
 - [ ] Popover / 下拉菜单
 - [x] Progress / 进度条
-- [ ] Radio / 单选框
+- [x] Radio / 单选框
 - [x] Rate / 评级
-- [ ] Select / 选择器
+- [x] Select / 选择器
 - [x] Slider / 滑块
 - [x] Snippet / 片段
 - [x] Spacer / 占位符
 - [x] Spinner / 指示器
-- [ ] Switcher / 切换按钮
 - [ ] Table / 表格
 - [x] Tabs / 选项卡
 - [x] Tag / 标签
