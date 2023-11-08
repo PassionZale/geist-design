@@ -94,4 +94,7 @@ export * from './tabs'
 export { GTabsItem } from './tabs-item'
 export * from './tabs-item'
 
+export { GSlider } from './slider'
+export * from './slider'
+
 /** PLOP_INJECT_EXPORT */

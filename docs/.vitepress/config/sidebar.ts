@@ -73,6 +73,10 @@ export const sidebar = {
             {
               text: '文本输入框 <small>Textarea</small>',
               link: '/components/textarea'
+            },
+            {
+              text: '滑块 <small>Slider</small>',
+              link: '/components/slider'
             } /** PLOP_INJECT_SIDEBAR_FORM */
           ]
         },
