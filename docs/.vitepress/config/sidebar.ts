@@ -77,6 +77,10 @@ export const sidebar = {
             {
               text: '滑块 <small>Slider</small>',
               link: '/components/slider'
+            },
+            {
+              text: '开关 <small>Toggle</small>',
+              link: '/components/toggle'
             } /** PLOP_INJECT_SIDEBAR_FORM */
           ]
         },
