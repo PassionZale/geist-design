@@ -7,7 +7,10 @@ export const Props = {
   /** 是否禁用 */
   disabled: setBooleanProp(),
   /** 选中状态的值 */
-  label: setStringNumberProp()
+  label: {
+    ...setStringNumberProp(),
+    required: true
+  }
 } as const
 
 export type CheckboxProps = ExtractPropTypes<typeof Props>
