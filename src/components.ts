@@ -124,4 +124,7 @@ export * from './popover'
 export { GPopoverItem } from './popover-item'
 export * from './popover-item'
 
+export { GTooltip } from './tooltip'
+export * from './tooltip'
+
 /** PLOP_INJECT_EXPORT */

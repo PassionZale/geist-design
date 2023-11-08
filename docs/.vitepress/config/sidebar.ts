@@ -117,6 +117,10 @@ export const sidebar = {
             {
               text: '下拉菜单 <small>Popover</small>',
               link: '/components/popover'
+            },
+            {
+              text: '提示框 <small>Tooltip</small>',
+              link: '/components/tooltip'
             } /** PLOP_INJECT_SIDEBAR_DATA_DISPLAY */
           ]
         },

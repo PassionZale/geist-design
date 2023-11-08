@@ -49,6 +49,7 @@ declare module '@vue/runtime-core' {
     GOption: typeof components.GOption
     GPopover: typeof components.GPopover
     GPopoverItem: typeof components.GPopoverItem
+    GTooltip: typeof components.GTooltip
     /** PLOP_INJECT_EXPORT */
   }
 }
