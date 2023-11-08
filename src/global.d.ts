@@ -43,6 +43,8 @@ declare module '@vue/runtime-core' {
     GToggle: typeof components.GToggle
     GCheckbox: typeof components.GCheckbox
     GCheckboxGroup: typeof components.GCheckboxGroup
+    GRadio: typeof components.GRadio
+    GRadioGroup: typeof components.GRadioGroup
     /** PLOP_INJECT_EXPORT */
   }
 }

@@ -106,4 +106,10 @@ export * from './checkbox'
 export { GCheckboxGroup } from './checkbox-group'
 export * from './checkbox-group'
 
+export { GRadio } from './radio'
+export * from './radio'
+
+export { GRadioGroup } from './radio-group'
+export * from './radio-group'
+
 /** PLOP_INJECT_EXPORT */

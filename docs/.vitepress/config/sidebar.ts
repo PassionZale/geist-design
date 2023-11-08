@@ -85,6 +85,10 @@ export const sidebar = {
             {
               text: '多选框 <small>Checkbox</small>',
               link: '/components/checkbox'
+            },
+            {
+              text: '单选框 <small>Radio</small>',
+              link: '/components/radio'
             } /** PLOP_INJECT_SIDEBAR_FORM */
           ]
         },
