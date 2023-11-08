@@ -97,4 +97,7 @@ export * from './tabs-item'
 export { GSlider } from './slider'
 export * from './slider'
 
+export { GToggle } from './toggle'
+export * from './toggle'
+
 /** PLOP_INJECT_EXPORT */

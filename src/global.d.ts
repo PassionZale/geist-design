@@ -40,6 +40,7 @@ declare module '@vue/runtime-core' {
     GTabs: typeof components.GTabs
     GTabsItem: typeof components.GTabsItem
     GSlider: typeof components.GSlider
+    GToggle: typeof components.GToggle
     /** PLOP_INJECT_EXPORT */
   }
 }
