@@ -100,4 +100,10 @@ export * from './slider'
 export { GToggle } from './toggle'
 export * from './toggle'
 
+export { GCheckbox } from './checkbox'
+export * from './checkbox'
+
+export { GCheckboxGroup } from './checkbox-group'
+export * from './checkbox-group'
+
 /** PLOP_INJECT_EXPORT */

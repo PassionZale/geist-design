@@ -76,7 +76,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Badge / 徽章
 - [x] Button / 按钮
 - [x] Card / 卡片
-- [ ] Checkbox / 多选框
+- [x] Checkbox / 多选框
 - [x] Code / 代码
 - [x] Collapse / 折叠框
 - [x] Description / 描述
@@ -84,7 +84,6 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Display / 陈列框
 - [x] Dot / 点
 - [x] Fieldset / 控件组
-- [ ] Files / 文件
 - [x] Grid / 栅格
 - [x] Image / 图片
 - [x] Icons / 图标

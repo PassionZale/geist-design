@@ -1,0 +1,48 @@
+.g-checkbox {
+	cursor: pointer;
+	display: inline-flex;
+	height: rem(12);
+	width: rem(12);
+	user-select: none;
+	&.disabled {
+		cursor: not-allowed;
+		opacity: 0.4;
+	}
+}
+.g-checkbox-group {
+	.g-checkbox-container {
+		margin-right: rem(30);
+	}
+}
+.g-checkbox-container {
+	height: rem(14);
+	line-height: rem(14);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	&.disabled {
+		cursor: not-allowed;
+		.g-checkbox-label {
+			cursor: not-allowed;
+		}
+	}
+	.g-checkbox-label {
+		font-size: rem(14);
+		line-height: rem(14);
+		padding-left: rem(8);
+		user-select: none;
+		cursor: pointer;
+	}
+	.g-checkbox-original {
+		opacity: 0;
+		outline: none;
+		position: absolute;
+		width: 0;
+		height: 0;
+		margin: 0;
+		padding: 0;
+		z-index: -1;
+		background-color: transparent;
+	}
+}

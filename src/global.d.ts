@@ -41,6 +41,8 @@ declare module '@vue/runtime-core' {
     GTabsItem: typeof components.GTabsItem
     GSlider: typeof components.GSlider
     GToggle: typeof components.GToggle
+    GCheckbox: typeof components.GCheckbox
+    GCheckboxGroup: typeof components.GCheckboxGroup
     /** PLOP_INJECT_EXPORT */
   }
 }
