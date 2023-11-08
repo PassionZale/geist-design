@@ -118,4 +118,10 @@ export * from './select'
 export { GOption } from './select-option'
 export * from './select-option'
 
+export { GPopover } from './popover'
+export * from './popover'
+
+export { GPopoverItem } from './popover-item'
+export * from './popover-item'
+
 /** PLOP_INJECT_EXPORT */

@@ -47,6 +47,8 @@ declare module '@vue/runtime-core' {
     GRadioGroup: typeof components.GRadioGroup
     GSelect: typeof components.GSelect
     GOption: typeof components.GOption
+    GPopover: typeof components.GPopover
+    GPopoverItem: typeof components.GPopoverItem
     /** PLOP_INJECT_EXPORT */
   }
 }
