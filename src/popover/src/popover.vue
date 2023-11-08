@@ -72,7 +72,7 @@
       <slot></slot>
     </span>
 
-    <transition name="g-fade-in">
+    <transition name="g-transition-fade" mode="out-in">
       <div v-show="visible" class="g-popover-dropdown" :class="align">
         <popover-icon class="g-popover-icon"></popover-icon>
 
