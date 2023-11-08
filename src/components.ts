@@ -94,16 +94,4 @@ export * from './tabs'
 export { GTabsItem } from './tabs-item'
 export * from './tabs-item'
 
-export { GFiles } from './files'
-export * from './files'
-
-export { GFilesItem } from './files-item'
-export * from './files-item'
-
-export { GFilesIcon } from './files-icon'
-export * from './files-icon'
-
-export { GFilesStatus } from './files-status'
-export * from './files-status'
-
 /** PLOP_INJECT_EXPORT */

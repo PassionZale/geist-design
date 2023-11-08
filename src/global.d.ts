@@ -39,10 +39,6 @@ declare module '@vue/runtime-core' {
     GRow: typeof components.GRow
     GTabs: typeof components.GTabs
     GTabsItem: typeof components.GTabsItem
-    GFiles: typeof components.GFiles
-    GFilesItem: typeof components.GFilesItem
-    GFilesIcon: typeof components.GFilesIcon
-    GFilesStatus: typeof components.GFilesStatus
     /** PLOP_INJECT_EXPORT */
   }
 }

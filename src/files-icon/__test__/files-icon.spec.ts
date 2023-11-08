@@ -1,1 +1,0 @@
-// TODO filesIcon unit test
