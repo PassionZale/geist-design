@@ -22,6 +22,7 @@
     opacity 0.2s ease 0s,
     margin-top 0.2s ease 0s;
   contain: layout;
+
   &.active {
     transform: translateY(14px);
     pointer-events: unset;
@@ -32,10 +33,11 @@
     left: 50%;
     transform: translate(-50%);
   }
+
   &.left {
     left: 0;
     transform: translate(-5px);
-    .icon {
+    .g-popover-icon {
       left: 10px;
       transform: unset;
     }
@@ -43,7 +45,7 @@
   &.right {
     right: 0;
     transform: translate(5px);
-    .icon {
+    .g-popover-icon {
       right: 10px;
       left: unset;
       transform: unset;

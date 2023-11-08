@@ -115,8 +115,8 @@ export const sidebar = {
               link: '/components/image'
             },
             {
-              text: '文件 <small>Files</small>',
-              link: '/components/files'
+              text: '下拉菜单 <small>Popover</small>',
+              link: '/components/popover'
             } /** PLOP_INJECT_SIDEBAR_DATA_DISPLAY */
           ]
         },

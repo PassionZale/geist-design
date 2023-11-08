@@ -93,7 +93,7 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Link / 链接
 - [x] More / 更多
 - [x] Note / 提示
-- [ ] Popover / 下拉菜单
+- [x] Popover / 下拉菜单
 - [x] Progress / 进度条
 - [x] Radio / 单选框
 - [x] Rate / 评级
