@@ -3,11 +3,12 @@
 
   defineOptions({ name: 'ex-radio-disabled' })
 
-  const value = ref('Wuhan')
+  const disabledValue = ref('Wuhan')
+  const value = ref(2)
 </script>
 
 <template>
-  <g-radio v-model="value" label="Wuhan" disabled>Wuhan</g-radio>
+  <g-radio v-model="disabledValue" label="Wuhan" disabled>Wuhan</g-radio>
 
   <g-radio v-model="value" :label="2">Shenzhen</g-radio>
   
