@@ -1,8 +1,10 @@
 <script setup lang="ts">
+  import { ref, watchEffect } from 'vue'
   import image from './assets/geist-design.svg'
   import { GIconAirplay } from '@whouu/geist-design-icons'
   import { GToast } from 'geist-design'
-  import { ref, watchEffect } from 'vue'
+
+  import dataTable from './components/data-table.vue'
 
   function handleToast1(): void {
     GToast.success('handleToast1')
@@ -30,6 +32,8 @@
 </script>
 
 <template>
+  <data-table />
+
   <g-collapse v-model="collapseValue">
     <g-collapse-item name="1">
       <template #title>Question A</template>
