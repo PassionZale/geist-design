@@ -121,6 +121,10 @@ export const sidebar = {
             {
               text: '提示框 <small>Tooltip</small>',
               link: '/components/tooltip'
+            },
+            {
+              text: '表格 <small>Table</small>',
+              link: '/components/table'
             } /** PLOP_INJECT_SIDEBAR_DATA_DISPLAY */
           ]
         },
