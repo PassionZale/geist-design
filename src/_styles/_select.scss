@@ -59,6 +59,11 @@
     margin: 0;
     width: 100%;
     height: 100%;
+
+    option {
+      color: var(--geist-foreground);
+      background-color: var(--geist-background);
+    }
   }
   &.simple {
     width: initial;
