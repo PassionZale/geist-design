@@ -21,11 +21,11 @@ export type TableTitleRender = (
 
 export type TableDataRender = (
   h: TableRenderH,
-  dataItem: Record<string, unknown>,
+  dataItem: typeof TableSourceData[number],
   index: number
 ) => VNode
 
-export type TableSourceData = Record<string, unknown>[]
+export type TableSourceData<T = Record<string, unknown>> = T[]
 
 export interface TableColumn {
   /** render columns item */

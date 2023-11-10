@@ -5,7 +5,14 @@
 
   defineOptions({ name: 'ex-table-action' })
 
-  const dataSource = ref<TableSourceData>([
+  interface DataItem {
+    name: string
+    usage: string
+    point: string
+    taste: string
+  }
+
+  const dataSource = ref<TableSourceData<DataItem>>([
     {
       name: 'apple',
       usage: 'eat',
