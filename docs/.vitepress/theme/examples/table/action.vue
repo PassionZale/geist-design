@@ -1,7 +1,8 @@
 <script setup lang="ts">
   import { ref } from 'vue'
   import { GButton, GSpacer } from 'geist-design'
-  import type { TableColumn, TableSourceData } from 'geist-design'
+
+  import type { TableProps } from 'geist-design'
 
   defineOptions({ name: 'ex-table-action' })
 
@@ -12,7 +13,7 @@
     taste: string
   }
 
-  const dataSource = ref<TableSourceData<DataItem>>([
+  const dataSource = ref<TableProps<DataItem>['dataSource']>([
     {
       name: 'apple',
       usage: 'eat',
@@ -39,7 +40,7 @@
     }
   ])
 
-  const columns: TableColumn[] = [
+  const columns: TableProps<DataItem>['columns'] = [
     {
       title: 'Name',
       dataIndex: 'name'

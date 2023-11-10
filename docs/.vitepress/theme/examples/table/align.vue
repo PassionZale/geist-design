@@ -1,9 +1,16 @@
 <script setup lang="ts">
-  import type { TableColumn, TableSourceData } from 'geist-design'
+  import type { TableProps } from 'geist-design'
 
   defineOptions({ name: 'ex-table-align' })
 
-  const dataSource: TableSourceData = [
+  interface DataItem {
+    name: string
+    usage: string
+    point: string
+    taste: string
+  }
+
+  const dataSource: TableProps<DataItem>['dataSource'] = [
     {
       name: 'apple',
       usage: 'eat',
@@ -12,7 +19,7 @@
     }
   ]
 
-  const columns: TableColumn[] = [
+  const columns: TableProps<DataItem>['columns'] = [
     {
       title: 'Name',
       dataIndex: 'name'

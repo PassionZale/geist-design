@@ -4,7 +4,6 @@
 
   import type { VNode } from 'vue'
   import type {
-    TableColumn,
     TableRenderH,
     TableTitleRender,
     TableDataRender
@@ -16,10 +15,9 @@
 
   const columnsSlotTitle = (
     slotRender: TableTitleRender,
-    column: TableColumn,
     index: number
   ): VNode => {
-    return slotRender(h as TableRenderH, column, index)
+    return slotRender(h as TableRenderH, index)
   }
 
   const columnsSlotData = (
@@ -44,7 +42,7 @@
         <tr>
           <th v-for="(column, index) in columns" :key="index" :class="align && align">
             <template v-if="isFunction(column.title)">
-              <component :is="columnsSlotTitle(column.title, column, index)" />
+              <component :is="columnsSlotTitle(column.title, index)" />
             </template>
 
             <template v-else>
