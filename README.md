@@ -102,11 +102,11 @@ createApp(App).use(GeistDesign).mount('#app')
 - [x] Snippet / 片段
 - [x] Spacer / 占位符
 - [x] Spinner / 指示器
-- [ ] Table / 表格
+- [x] Table / 表格
 - [x] Tabs / 选项卡
 - [x] Tag / 标签
 - [x] Textarea / 文本输入框
 - [x] Toast / 通知
 - [x] Toggle / 开关
-- [ ] Tooltip / 提示框
+- [x] Tooltip / 提示框
 - [x] User / 用户
