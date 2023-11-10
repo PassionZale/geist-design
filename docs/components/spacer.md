@@ -1,4 +1,4 @@
-# 占位符 / Spacer
+# 占位符 Spacer
 
 <ex-code name="ex-spacer-vertical"></ex-code>
 

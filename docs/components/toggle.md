@@ -1,4 +1,4 @@
-# 开关 / Toggle
+# 开关 Toggle
 
 <ex-code name="ex-toggle-basic"></ex-code>
 

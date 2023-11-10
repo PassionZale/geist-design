@@ -1,4 +1,4 @@
-# 评级 / Rate
+# 评级 Rate
 
 <ex-code name="ex-rate-basic"></ex-code>
 

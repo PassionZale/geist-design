@@ -1,4 +1,4 @@
-# 键盘 / Keyboard
+# 键盘 Keyboard
 
 <ex-code name="ex-keyboard-basic">
 

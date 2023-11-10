@@ -1,4 +1,4 @@
-# 描述 / Description
+# 描述 Description
 
 <ex-code name="ex-description-basic">
 

@@ -1,4 +1,4 @@
-# 文本输入框 / Textarea
+# 文本输入框 Textarea
 
 <ex-code name="ex-textarea-basic">
 

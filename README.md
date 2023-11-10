@@ -70,43 +70,51 @@ createApp(App).use(GeistDesign).mount('#app')
 
 [MIT](https://github.com/PassionZale/geist-design/blob/main/LICENSE)
 
-## ✨ 特性
+## ✨ 组件
 
-- [x] Avatar / 头像
-- [x] Badge / 徽章
-- [x] Button / 按钮
-- [x] Card / 卡片
-- [x] Checkbox / 多选框
-- [x] Code / 代码
-- [x] Collapse / 折叠框
-- [x] Description / 描述
-- [x] Dialog / 对话框
-- [x] Display / 陈列框
-- [x] Dot / 点
-- [x] Fieldset / 控件组
-- [x] Grid / 栅格
-- [x] Image / 图片
-- [x] Icons / 图标
-- [x] Input / 输入框
-- [x] Keyboard / 键盘
-- [x] Layout / 布局
-- [x] Link / 链接
-- [x] More / 更多
-- [x] Note / 提示
-- [x] Popover / 下拉菜单
-- [x] Progress / 进度条
-- [x] Radio / 单选框
-- [x] Rate / 评级
-- [x] Select / 选择器
-- [x] Slider / 滑块
-- [x] Snippet / 片段
-- [x] Spacer / 占位符
-- [x] Spinner / 指示器
-- [x] Table / 表格
-- [x] Tabs / 选项卡
-- [x] Tag / 标签
-- [x] Textarea / 文本输入框
-- [x] Toast / 通知
-- [x] Toggle / 开关
-- [x] Tooltip / 提示框
-- [x] User / 用户
+- 通用
+  - [x] 按钮 Button
+  - [x] 代码 Code
+  - [x] 图标 Icons
+- 布局
+  - [x] 占位符 Spacer
+  - [x] 栅格 Grid
+  - [x] 布局 Layout
+- 容器
+  - [x] 卡片 Card
+  - [x] 控件组 Fieldset
+  - [x] 折叠框 Collapse
+- 表单
+  - [x] 输入框 Input
+  - [x] 文本输入框 Textarea
+  - [x] 滑块 Slider
+  - [x] 开关 Toggle
+  - [x] 多选框 Checkbox
+  - [x] 单选框 Radio
+  - [x] 下拉框 Select
+- 数据展示
+  - [x] 头像 Avatar
+  - [x] 徽章 Badge
+  - [x] 描述 Description
+  - [x] 陈列框 Display
+  - [x] 点 Dot
+  - [x] 键盘 Keyboard
+  - [x] 标签 Tag
+  - [x] 用户 User
+  - [x] 图片 Image
+  - [x] 下拉菜单 Popover
+  - [x] 提示框 Tooltip
+  - [x] 表格 Table
+- 反馈
+  - [x] 通知 Toast
+  - [x] 提示 Note
+  - [x] 评级 Rate
+  - [x] 指示器 Spinner
+  - [x] 进度条 Progress
+  - [x] 更多 More
+  - [x] 对话框 Dialog
+- 导航
+  - [x] 链接 Link
+  - [x] 选项卡 Tabs
+- 其他
+  - [x] 片段 Snippet

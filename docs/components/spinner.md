@@ -1,4 +1,4 @@
-# 指示器 / Spinner
+# 指示器 Spinner
 
 <ex-code name="ex-spinner-basic"></ex-code>
 
