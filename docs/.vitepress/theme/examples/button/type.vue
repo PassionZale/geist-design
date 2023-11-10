@@ -13,7 +13,7 @@
 
 <style lang="scss" scoped>
   .buttons > button {
-    margin-bottom: 20px;
-    display: block;
+    margin-right: 8px;
+    margin-bottom: 8px;
   }
 </style>

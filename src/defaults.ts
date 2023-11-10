@@ -1,5 +1,6 @@
 import * as components from './components'
 import { version } from '../package.json'
+import * as theme from './_utils/theme'
 
 import type { App } from 'vue'
 
@@ -13,5 +14,6 @@ const install = (app: App): App => {
 
 export default {
   install,
-  version
+  version,
+  theme
 }
