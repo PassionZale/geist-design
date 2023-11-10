@@ -33,7 +33,7 @@
 
   const columns: TableColumn[] = [
     {
-      title: h =>
+      title: (h) =>
         h('div', { style: 'display: flex; align-items: center' }, [
           h(GIconGithub),
           h('span', { style: 'margin-left: 6px;' }, 'Name')

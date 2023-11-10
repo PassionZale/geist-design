@@ -21,7 +21,7 @@ export type TableTitleRender = (
 
 export type TableDataRender = (
   h: TableRenderH,
-  dataItem: typeof TableSourceData[number],
+  dataItem: Record<string, unknown>,
   index: number
 ) => VNode
 
