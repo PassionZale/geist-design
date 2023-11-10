@@ -48,16 +48,26 @@
 | **align**      | 对齐方式                 | `string`  | `left / center / right` | `left`     |
 | **empty-text** | 数据数组为空时显示的文本 | `string`  | -                       | `暂无数据` |
 
-<g-code>TableColumn</g-code>
+<g-code>TableProps</g-code>
 
 ```ts
-interface TableColumn {
+interface TableProps<T = TableDefaultRow> {
+  dataSource: T[]
+  columns: TableColumn<T>[]
+  hoverable?: boolean
+  align?: TableAlign
+  emptyText?: string
+}
+```
+
+```ts
+interface TableColumn<T = TableDefaultRow> {
   /** render columns item */
   title: string | TableTitleRender
   /** 列数据在数据源中对应的路径 */
   dataIndex?: string
   /** render sourceData item */
-  render?: TableDataRender
+  render?: TableDataRender<T>
   /** 列的宽度 */
   width?: string | number
 }
@@ -68,7 +78,6 @@ interface TableColumn {
 ```ts
 type TableTitleRender = (
   h: TableRenderH,
-  column: TableColumn,
   index: number
 ) => VNode
 ```
@@ -76,9 +85,9 @@ type TableTitleRender = (
 <g-code>TableDataRender</g-code>
 
 ```ts
-type TableDataRender = (
+type TableDataRender<T = TableDefaultRow> = (
   h: TableRenderH,
-  dataItem: Record<string, unknown>,
+  dataItem: T,
   index: number
 ) => VNode
 ```
