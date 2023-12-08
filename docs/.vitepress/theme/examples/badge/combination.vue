@@ -16,7 +16,7 @@
   <p>
     你有&nbsp;
     <g-badge count="10+" status="error" dot>
-      <a href="https://lovchun.com" target="_blank">未读消息</a>
+      <a href="https://www.lovchun.com" target="_blank">未读消息</a>
     </g-badge>
   </p>
 </template>

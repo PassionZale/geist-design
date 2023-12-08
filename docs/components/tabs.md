@@ -17,7 +17,7 @@
 <ex-code name="ex-tabs-icon">
 
 你可以在 <g-code>geist-design-icons</g-code> 库获取更多的图标,
-请参阅 <g-link color href="/components/icons">geist-design-icons 文档</g-link>。
+请参阅 <g-link color href="/components/icons.html">geist-design-icons 文档</g-link>。
 
 </ex-code>
 
