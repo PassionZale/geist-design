@@ -12,8 +12,8 @@ export const nav = [
     link: '/components/button'
   },
   {
-    text: '教程',
-    link: 'https://www.lovchun.com/tags/vuejs'
+    text: '专栏',
+    link: 'https://www.lovchun.com/columns/setup-vue3-component-library'
   },
   {
     text: `v${version}`,
